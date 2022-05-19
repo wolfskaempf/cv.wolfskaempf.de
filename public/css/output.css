@@ -550,6 +550,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .lowercase {
   text-transform: lowercase;
 }

@@ -1,14 +1,18 @@
 import {createApp} from 'vue'
 
-let id = 0
-
 createApp({
     data() {
         return {
-            message: 'world',
+            loading: true,
+            error: null,
+            elements: {},
             language: 'en'
         }
     },
-    methods: {
+    methods: {},
+    mounted() {
+        fetch('/elements/' + this.language)
+            .then(response => response.json())
+            .then(data => this.elements = data);
     }
 }).mount('#app')
