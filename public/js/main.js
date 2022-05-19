@@ -16,6 +16,9 @@ createApp({
             } else if (this.language == "de") {
                 this.language = "en"
             }
+            fetch('/elements/' + this.language)
+                .then(response => response.json())
+                .then(data => this.elements = data);
         }
     },
     mounted() {
@@ -23,9 +26,4 @@ createApp({
             .then(response => response.json())
             .then(data => this.elements = data);
     },
-    updated() {
-        fetch('/elements/' + this.language)
-            .then(response => response.json())
-            .then(data => this.elements = data);
-    }
 }).mount('#app')
