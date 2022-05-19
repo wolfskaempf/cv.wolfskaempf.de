@@ -9,8 +9,21 @@ createApp({
             language: 'en'
         }
     },
-    methods: {},
+    methods: {
+        switchLanguage() {
+            if (this.language == "en") {
+                this.language = "de"
+            } else if (this.language == "de") {
+                this.language = "en"
+            }
+        }
+    },
     mounted() {
+        fetch('/elements/' + this.language)
+            .then(response => response.json())
+            .then(data => this.elements = data);
+    },
+    updated() {
         fetch('/elements/' + this.language)
             .then(response => response.json())
             .then(data => this.elements = data);
