@@ -11,9 +11,9 @@ createApp({
     },
     methods: {
         switchLanguage() {
-            if (this.language == "en") {
+            if (this.language === "en") {
                 this.language = "de"
-            } else if (this.language == "de") {
+            } else if (this.language === "de") {
                 this.language = "en"
             }
             fetch('/elements/' + this.language)
