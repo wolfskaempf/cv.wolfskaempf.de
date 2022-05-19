@@ -25,6 +25,6 @@ element_db["powered_by"] = Element(name="powered_by", content={
 })
 
 
-@app.get("/elements/{language}/{element_name}")
+@app.get("/element/{language}/{element_name}")
 async def get_element(language: Language, element_name: str):
     return {element_db[element_name].content[language]}
