@@ -1,0 +1,13 @@
+*.pyc
+*.sqlite3
+
+pip-selfcheck.json
+.Python
+.DS_Store
+plantb.egg-info/
+
+.idea/*
+.idea/.*
+.idea/workspace.xml
+
+.venv
