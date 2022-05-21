@@ -15,7 +15,18 @@ class Element(BaseModel):
     content: dict[Language, str]
 
 
+class Experience(BaseModel):
+    """Objects of this type contain all attributes of one piece of experience"""
+    language: Language
+    company: str
+    title: str
+    start_date: str
+    end_date: str
+    description: str
+
+
 # For the purposes of this CV, using a real database would be a bit overkill
+# Since all elements are well-defined through pydantic, connecting a database later is no issue
 element_db: dict[str, Element] = {}
 element_db["powered_by"] = Element(name="powered_by", content={
     "en": "This CV is built with FastAPI, Vue and Tailwind CSS.",
