@@ -1,4 +1,4 @@
-import {createApp} from 'vue'
+import {createApp} from '../dist/vue.esm-browser.js'
 
 createApp({
     data() {
