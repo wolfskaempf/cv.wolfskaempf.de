@@ -18,8 +18,8 @@ class Element(BaseModel):
 # For the purposes of this CV, using a real database would be a bit overkill
 element_db: dict[str, Element] = {}
 element_db["powered_by"] = Element(name="powered_by", content={
-    "en": "This CV is built with FastAPI, Vue and Tailwind CSS",
-    "de": "Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erschaffen"
+    "en": "This CV is built with FastAPI, Vue and Tailwind CSS.",
+    "de": "Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erschaffen."
 })
 element_db["image_alt"] = Element(name="image_alt", content={
     "en": "Profile picture of Tom Wolfskämpf",
@@ -38,12 +38,12 @@ element_db["glance_header"] = Element(name="glance_header", content={
     "de": "Auf einen Blick"
 })
 element_db["glance_copy"] = Element(name="glance_copy", content={
-    "en": """Hi! 👋 I'm Tom, 25 years old. I graduated in 2015 with an Abitur-grade of 1.8 and have been living in 
-    Augsburg since 2016.
+    "en": """Hi! 👋 I'm Tom and I'm 25 years old. I graduated in 2015 with an Abitur-grade of 1.8 and have been living 
+    in Augsburg since 2016.
     </br></br>
     Since 2015 I have been developing web applications using Python on a voluntary basis, amongst others for the 
-    <a href="https://eyp.org/" target="_blank">European Youth Parliament</a>, where I've also been a member of the board of the German national committee between 
-    2016 and 2018.
+    <a href="https://eyp.org/" target="_blank">European Youth Parliament</a>, where I've also been a member of the board
+    of the German national committee between 2016 and 2018.
     </br></br>
     To date, my largest project <a href="https://stats.eyp.org/" target="_blank">GA Statistics</a> has been used to 
     visualise debates and voting procedures at over 250 events in 40 different countries. During the pandemic it was
