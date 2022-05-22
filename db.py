@@ -34,6 +34,15 @@ class Education(BaseModel):
     end_date: str
     description: str
 
+class Volunteering(BaseModel):
+    """Objects of this type contain all attributes of one piece of volunteering"""
+    language: Language
+    organisation: str
+    title: str
+    start_date: str
+    end_date: str
+    description: str
+
 
 # For the purposes of this CV, using a real database would be a bit overkill
 # Since all elements are well-defined through pydantic, connecting a database later is no issue
@@ -61,30 +70,30 @@ element_db["glance_header"] = Element(name="glance_header", content={
 element_db["glance_copy"] = Element(name="glance_copy", content={
     "en": """Hi! 👋 I'm Tom and I'm 25 years old. I'm passionate about accessible education, public health, stopping climate change
     and using Python to improve the world.
-    </br></br>
+    <br><br>
     Since 2015 I have been developing web applications using Python on a voluntary basis, amongst others for the 
     <a href = "https://eyp.org/" target = "_blank">European Youth Parliament</a>, where I've also been a member of the board
     of the German national committee between 2016 and 2018.
-    </br></br>
+    <br><br>
     To date, my largest project <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> has been used to 
     visualise debates and voting procedures at over 250 events in 40 different countries. During the pandemic it was
     an essential tool for the continued operation of the events of the European Youth Parliament.
-    </br></br>
+    <br><br>
     During my computer science studies at the University of Augsburg I've been tutor for Computer Science 
     (C and Java 8) and mentored the one-week programming courses.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
     das Fortschreiten der Klimakatastrophe aufzuhalten und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
-    </br></br>
+    <br><br>
     Seit 2015 entwickle ich ehrenamtlich Webanwendungen mit Python, unter anderem für das 
     <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschen Vorstand ich von 2016 bis 2018 
     angehörte.
-    </br></br>
+    <br><br>
     Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
-    </br></br>
+    <br><br>
     Während meines Informatikstudiums an der Universität Augsburg war ich Tutor für Informatik (C und Java 8)
     und betreute die jeweils einwöchigen Programmierkurse."""
 })
@@ -153,12 +162,12 @@ experience_db_de.append(Experience(
     description="""Als eine meiner diversen Tätigkeiten beim Europäischen Jugendparlament (EJP) visualisierte ich 
     die Debatten und Abstimmungen der Vollversammlungen und automatisierte zeitaufwändige interne Prozesse bei
     einer gleichzeitigen Verbesserung der Ergebnisqualität.
-    </br></br>
+    <br><br>
     Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
-    </br></br>
+    <br><br>
     Zuletzt beriet ich hauptsächlich die Projektmanager des Internationalen Büros des EJP darin, 
     ihre Wünsche in eine verbindliche Sprache zu übersetzen, die auch von extern beschäftigten 
     Webentwicklern verstanden wird.
@@ -175,7 +184,7 @@ experience_db_de.append(Experience(
     und der Untersuchung. Mit viel Freude erarbeite ich gemeinsam mit unseren Doktoren und Medizinprofessoren
     die tomographische Wissensgrundlage mit Hilfe derer die optimale medizinische Versorgung für die Patienten
     ausgearbeitet wird.
-    </br></br>
+    <br><br>
     Neben der technischen Durchführung der MRT-Untersuchungen von Köpfen und Wirbelsäulen an Siemens Avanto und
     Vida gehört auch die Abrechnung und das Verabreichen des Kontrastmittels zu meinen Aufgaben.
     """
@@ -256,18 +265,25 @@ experience_db_en.append(Experience(
     building the foundation of knowledge that allows our patients to recieve the optimal medical care, 
     based on tomographic evidence.
     
-    </br></br>My main area of work is conducting neurological MRI scans of brains 
+    <br><br>My main area of work is conducting neurological MRI scans of brains 
     and spines on Siemens MRIs, as well as medical accounting and administering contrast agent during the 
     examinations.
     """
 ))
+
+# Reversing the lists in place to get reverse chronological order.
+# Why not create the list in this order to begin with?
+# This is done to maintain future compatibility with a real database, where the natural order would
+# also be chronological, based on the later primary keys being larger
+experience_db_de.reverse()
+experience_db_en.reverse()
 
 
 education_db_en: list[Education] = []
 education_db_en.append(Education(
     language=Language.en,
     institute="Europaschule Gymnasium Graf-Friedrich-Schule Diepholz",
-    title="Abitur (Grade: 1,8)",
+    title="Abitur (Grade: 1.8)",
     start_date="2007",
     end_date="2015",
     description="""
@@ -318,9 +334,81 @@ education_db_de.append(Education(
     description="Auf Grund der Covid-19-Pandemie schloss ich dieses Studium bisher nicht ab."
 ))
 
-# Reversing the lists in place to get reverse chronological order.
-# Why not create the list in this order to begin with?
-# This is done to maintain future compatibility with a real database, where the natural order would
-# also be chronological, based on the later primary keys being larger
-experience_db_de.reverse()
-experience_db_en.reverse()
+
+volunteering_db_en: list[Volunteering] = []
+volunteering_db_en.append(Volunteering(
+    language=Language.en,
+    organisation="European Youth Parliament Germany",
+    title="Member of the Board",
+    start_date="June 2016",
+    end_date="June 2018",
+    description="""As a member of the board of the European Youth Parliament (EYP) Germany, I was responsible for our 
+    International Network and Member Management, as well as IT. I connected the 40 member countries of the EYP with each other, 
+    mainly by organising the exchange of participants between countries and representing Germany at the international meetings of 
+    the boards of the other 39 participating national committees.
+    <br><br>
+    Furthermore, I was responsible for managing our IT infrastructure and coordinating our internal communication strategy.
+    To improve out internal processes, I developed multiple applications that improved the quality of the results significantly 
+     and to this day automate time-intensive tasks.
+    """
+))
+volunteering_db_en.append(Volunteering(
+    language=Language.en,
+    organisation="Tennis division of the Sports Community Diepholz of 1980 e.V.",
+    title="Member of the Board",
+    start_date="July 2013",
+    end_date="January 2019",
+    description="""As the youngest member of the board I was responsible for making our organisation more attractive for younger members
+    and creating and maintaining our online presence."""
+))
+volunteering_db_en.append(Volunteering(
+    language=Language.en,
+    organisation="European Youth Parliament",
+    title="Event Organiser",
+    start_date="October 2014",
+    end_date="October 2018",
+    description="""As an event organiser within the network of the European Youth Parliament I was responsbile for designing and 
+    creating event merchandising, event's visual identities, as well as the IT infrastructure for the up to 350 participants per event.
+    At the EYP network's flagship event in Laax, Switzerland in 2016 I was responsible for facilitating the inter team communication 
+    between the 350 participants of the event."""
+))
+
+volunteering_db_de: list[Volunteering] = []
+volunteering_db_de.append(Volunteering(
+    language=Language.de,
+    organisation="Europäisches Jugendparlament in Deutschland e.V.",
+    title="Vorstandsmitlied",
+    start_date="Juni 2016",
+    end_date="Juni 2018",
+    description="""Das Netzwerk des Europäischen Jugendparlaments (EJP) erstreckt sich über insgesamt 40 europäische Länder, 
+    auch außerhalb der EU. Kernaufgabe meines Vorstandsressorts war es, den internationalen Teilnehmendenaustausch zu organisieren und
+    Deutschland auf den Internationalen Treffen der Vorstände zu repräsentieren.
+    <br><br>
+    Zudem war ich für die interne IT-Infrastruktur und unsere interne Kommunikationsstrategie verantwortlich. Um unsere internen
+    Prozesse zu verbessern, entwickelte ich Anwendungen, die noch heute zeitintensive Aufgaben automatisieren und die Ergebnisqualität 
+    deutlich anhoben."""
+))
+volunteering_db_de.append(Volunteering(
+    language=Language.de,
+    organisation="Tennisabteilung der SG Diepholz von 1980 e.V.",
+    title="Vorstandsmitglied",
+    start_date="Juli 2013",
+    end_date="Januar 2019",
+    description="""Als das damals jüngste Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein attraktiver für junge
+    Mitglieder zu machen. Ich erstellte und pflegte unsere Online-Präsenz."""
+))
+volunteering_db_de.append(Volunteering(
+    language=Language.de,
+    organisation="Europäisches Jugendparlament",
+    title="Veranstaltungsorganisator",
+    start_date="Oktober 2014",
+    end_date="Oktober 2018",
+    description="""Als Veranstaltungsorganisator im europäischen Netzwerk des Europäischen Jugendparlaments gehörte es zu meinen
+    Aufgaben das Veranstaltungs-Merchandising, die visuelle Identität der Veranstaltung und ihre IT-Infrastruktur für die bis zu 350
+    Teilnehmenden pro Veranstaltung zu erschaffen."""
+))
+
+# """As an event organiser within the network of the European Youth Parliament I was responsbile for designing and 
+#     creating event merchandising, event's visual identities, as well as the IT infrastructure for the up to 350 participants per event.
+#     At the EYP network's flagship event in Laax, Switzerland in 2016 I was responsible for facilitating the inter team communication 
+#     between the 350 participants of the event."""
