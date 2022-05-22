@@ -12,7 +12,11 @@
 </head>
 <body>
 <div id="app">
-    <div :lang="language">
+    <div v-if="show_js_warning" class="xl:px-60 p-8 flex items-center justify-center flex-col">
+        <p>You need JavaScript to view this page until I implement Server-Side-Rendering. Sorry!</p>
+        <p>Du brauchst JavaScript um diese Seite zu sehen, zumindest solange ich Server-Side-Rendering noch nicht implementiert habe. Tut mir Leid!</p>
+    </div>
+    <div :lang="language" v-cloak>
         <div class="xl:px-60 p-8">
             <div class="relative">
                 <div class="absolute right-1">
@@ -35,6 +39,15 @@
             <div class="prose md:prose-xl">
                 <h2>{{ elements['glance_header'] }}</h2>
                 <p v-html="elements['glance_copy']"></p>
+
+                <h2>{{ elements['experience_header'] }}</h2>
+                <div v-for="exp in experiences">
+                    <h3 class="mb-0">{{ exp.title }}</h3>
+                    <p>{{ exp.company }}</p>
+                    <p>{{ exp.start_date }} — {{ exp.end_date }}</p>
+
+                    <p v-html="exp.description"></p>
+                  </div>
 
                 <div>
                     <h2>{{ elements['trivia_header'] }}</h2>
