@@ -25,6 +25,16 @@ class Experience(BaseModel):
     description: str
 
 
+class Education(BaseModel):
+    """Objects of this type contain all attributes of one piece of education"""
+    language: Language
+    institute: str
+    title: str
+    start_date: str
+    end_date: str
+    description: str
+
+
 # For the purposes of this CV, using a real database would be a bit overkill
 # Since all elements are well-defined through pydantic, connecting a database later is no issue
 element_db: dict[str, Element] = {}
@@ -49,32 +59,33 @@ element_db["glance_header"] = Element(name="glance_header", content={
     "de": "Auf einen Blick"
 })
 element_db["glance_copy"] = Element(name="glance_copy", content={
-    "en": """Hi! 👋 I'm Tom and I'm 25 years old. I graduated in 2015 with an Abitur-grade of 1.8 and have been living 
-    in Augsburg since 2016.
+    "en": """Hi! 👋 I'm Tom and I'm 25 years old. I'm passionate about accessible education, public health, stopping climate change
+    and using Python to improve the world.
     </br></br>
     Since 2015 I have been developing web applications using Python on a voluntary basis, amongst others for the 
-    <a href="https://eyp.org/" target="_blank">European Youth Parliament</a>, where I've also been a member of the board
+    <a href = "https://eyp.org/" target = "_blank">European Youth Parliament</a>, where I've also been a member of the board
     of the German national committee between 2016 and 2018.
     </br></br>
-    To date, my largest project <a href="https://stats.eyp.org/" target="_blank">GA Statistics</a> has been used to 
+    To date, my largest project <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> has been used to 
     visualise debates and voting procedures at over 250 events in 40 different countries. During the pandemic it was
     an essential tool for the continued operation of the events of the European Youth Parliament.
     </br></br>
-    During my computer science studies at the University of Augsburg I have been tutor for Computer Science 1 and 2
+    During my computer science studies at the University of Augsburg I've been tutor for Computer Science 
     (C and Java 8) and mentored the one-week programming courses.""",
 
-    "de": """Hi! 👋 Ich bin Tom, 25 Jahre alt, schloss 2015 mein Abitur mit der Note 1,8 ab und lebe seit 2016 in Augsburg.
+    "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
+    das Fortschreiten der Klimakatastrophe aufzuhalten und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
     </br></br>
     Seit 2015 entwickle ich ehrenamtlich Webanwendungen mit Python, unter anderem für das 
-    <a href="https://eyp.de/" target="_blank">Europäische Jugendparlament</a>, dessen Vorstand ich von 2016 bis 2018 
+    <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschen Vorstand ich von 2016 bis 2018 
     angehörte.
     </br></br>
-    Mein größtes Projekt <a href="https://stats.eyp.org/" target="_blank">GA Statistics</a> wurde seit 2015 auf über 
+    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
     </br></br>
-    Während meines Informatikstudiums an der Universität Augsburg war ich Tutor für Informatik 1 und 2 (C und Java 8)
+    Während meines Informatikstudiums an der Universität Augsburg war ich Tutor für Informatik (C und Java 8)
     und betreute die jeweils einwöchigen Programmierkurse."""
 })
 element_db["experience_header"] = Element(name="experience_header", content={
@@ -143,7 +154,7 @@ experience_db_de.append(Experience(
     die Debatten und Abstimmungen der Vollversammlungen und automatisierte zeitaufwändige interne Prozesse bei
     einer gleichzeitigen Verbesserung der Ergebnisqualität.
     </br></br>
-    Mein größtes Projekt <a href="https://stats.eyp.org/" target="_blank">GA Statistics</a> wurde seit 2015 auf über 
+    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
@@ -251,7 +262,63 @@ experience_db_en.append(Experience(
     """
 ))
 
-# Reversing the list in place to get reverse chronological order.
+
+education_db_en: list[Education] = []
+education_db_en.append(Education(
+    language=Language.en,
+    institute="Europaschule Gymnasium Graf-Friedrich-Schule Diepholz",
+    title="Abitur (Grade: 1,8)",
+    start_date="2007",
+    end_date="2015",
+    description="""
+    """
+))
+education_db_en.append(Education(
+    language=Language.en,
+    institute="University of Augsburg",
+    title="Computer Science and Multimedia, B. Sc.",
+    start_date="2016",
+    end_date="2018",
+    description="In 2018 I changed my major to the newly introduced Medical Information Science, B. Sc."
+))
+education_db_en.append(Education(
+    language=Language.en,
+    institute="University of Augsburg",
+    title="Medical Information Science, B. Sc.",
+    start_date="2018",
+    end_date="2020",
+    description="Due to the Covid-19 pandemic, this major is unfinished for now."
+))
+
+
+education_db_de: list[Education] = []
+education_db_de.append(Education(
+    language=Language.de,
+    institute="Europaschule Gymnasium Graf-Friedrich-Schule Diepholz",
+    title="Abitur (Note: 1,8)",
+    start_date="2007",
+    end_date="2015",
+    description="""
+    """
+))
+education_db_de.append(Education(
+    language=Language.de,
+    institute="Universität Augsburg",
+    title="Informatik und Multimedia, B. Sc.",
+    start_date="2016",
+    end_date="2018",
+    description="2018 wechselte ich zu dem neu eingeführten Studiengang Medizinische Informatik, B. Sc."
+))
+education_db_de.append(Education(
+    language=Language.de,
+    institute="Universität Augsburg",
+    title="Medizinische Informatik, B. Sc.",
+    start_date="2018",
+    end_date="2020",
+    description="Auf Grund der Covid-19-Pandemie schloss ich dieses Studium bisher nicht ab."
+))
+
+# Reversing the lists in place to get reverse chronological order.
 # Why not create the list in this order to begin with?
 # This is done to maintain future compatibility with a real database, where the natural order would
 # also be chronological, based on the later primary keys being larger

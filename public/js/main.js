@@ -6,7 +6,8 @@ createApp({
             show_js_warning: false,
             elements: {},
             experiences: null,
-            language: 'en'
+            education: null,
+            language: 'de'
         }
     },
     methods: {
@@ -17,6 +18,9 @@ createApp({
             fetch('/experiences/' + this.language)
                 .then(response => response.json())
                 .then(data => this.experiences = data);
+            fetch('/education/' + this.language)
+                .then(response => response.json())
+                .then(data => this.education = data);
         },
         switchLanguage() {
             if (this.language === "en") {

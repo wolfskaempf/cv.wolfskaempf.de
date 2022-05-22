@@ -43,11 +43,19 @@
                 <h2>{{ elements['experience_header'] }}</h2>
                 <div v-for="exp in experiences">
                     <h3 class="mb-0">{{ exp.title }}</h3>
-                    <p>{{ exp.company }}</p>
-                    <p>{{ exp.start_date }} — {{ exp.end_date }}</p>
-
+                    <p class="mb-0">{{ exp.company }}</p>
+                    <p class="mt-0">{{ exp.start_date }} — {{ exp.end_date }}</p>
                     <p v-html="exp.description"></p>
                   </div>
+
+                  <h2>{{ elements['education_header'] }}</h2>
+                  <div v-for="edu in education">
+                      <h3 class="mb-0">{{ edu.title }}</h3>
+                      <p>{{ edu.start_date }} — {{ edu.end_date }} @ {{ edu.institute }}</p>
+  
+                      <p v-html="edu.description"></p>
+                    </div>
+  
 
                 <div>
                     <h2>{{ elements['trivia_header'] }}</h2>
