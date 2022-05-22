@@ -87,7 +87,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
     <br><br>
     Seit 2015 entwickle ich ehrenamtlich Webanwendungen mit Python, unter anderem für das 
-    <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschen Vorstand ich von 2016 bis 2018 
+    <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschem Vorstand ich von 2016 bis 2018 
     angehörte.
     <br><br>
     Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
