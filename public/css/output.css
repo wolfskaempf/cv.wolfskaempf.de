@@ -1013,23 +1013,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 3rem;
 }
 
-#app .gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-}
-
-#app .gap-y-12 {
-  row-gap: 3rem;
-}
-
-#app .rounded {
-  border-radius: 0.25rem;
-}
-
-#app .rounded-full {
-  border-radius: 9999px;
-}
-
 #app .rounded {
   border-radius: 0.25rem;
 }
@@ -1041,14 +1024,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 #app .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
-#app .p-8 {
-  padding: 2rem;
-}
-
-#app .p-1 {
-  padding: 0.25rem;
 }
 
 #app .p-8 {
@@ -1354,16 +1329,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  #app .xl\:px-60 {
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-
-  #app .xl\:px-64 {
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-
   #app .xl\:px-60 {
     padding-left: 15rem;
     padding-right: 15rem;

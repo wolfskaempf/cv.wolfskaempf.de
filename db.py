@@ -34,6 +34,7 @@ class Education(BaseModel):
     end_date: str
     description: str
 
+
 class Volunteering(BaseModel):
     """Objects of this type contain all attributes of one piece of volunteering"""
     language: Language
@@ -68,7 +69,7 @@ element_db["glance_header"] = Element(name="glance_header", content={
     "de": "Auf einen Blick"
 })
 element_db["glance_copy"] = Element(name="glance_copy", content={
-    "en": """Hi! 👋 I'm Tom and I'm 25 years old. I'm passionate about accessible education, public health, stopping climate change
+    "en": """Hi! 👋 I'm Tom and I'm 25 years old. I'm passionate about accessible education, public health, climate justice
     and using Python to improve the world.
     <br><br>
     Since 2015 I have been developing web applications using Python on a voluntary basis, amongst others for the 
@@ -83,7 +84,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     (C and Java 8) and mentored the one-week programming courses.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
-    das Fortschreiten der Klimakatastrophe aufzuhalten und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
+    Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
     <br><br>
     Seit 2015 entwickle ich ehrenamtlich Webanwendungen mit Python, unter anderem für das 
     <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschen Vorstand ich von 2016 bis 2018 
@@ -278,7 +279,6 @@ experience_db_en.append(Experience(
 experience_db_de.reverse()
 experience_db_en.reverse()
 
-
 education_db_en: list[Education] = []
 education_db_en.append(Education(
     language=Language.en,
@@ -306,7 +306,6 @@ education_db_en.append(Education(
     description="Due to the Covid-19 pandemic, this major is unfinished for now."
 ))
 
-
 education_db_de: list[Education] = []
 education_db_de.append(Education(
     language=Language.de,
@@ -333,7 +332,6 @@ education_db_de.append(Education(
     end_date="2020",
     description="Auf Grund der Covid-19-Pandemie schloss ich dieses Studium bisher nicht ab."
 ))
-
 
 volunteering_db_en: list[Volunteering] = []
 volunteering_db_en.append(Volunteering(
@@ -370,7 +368,7 @@ volunteering_db_en.append(Volunteering(
     description="""As an event organiser within the network of the European Youth Parliament I was responsbile for designing and 
     creating event merchandising, event's visual identities, as well as the IT infrastructure for the up to 350 participants per event.
     At the EYP network's flagship event in Laax, Switzerland in 2016 I was responsible for facilitating the inter team communication 
-    between the 350 participants of the event."""
+    between the 350 participants of the event."""  # TODO: Fit to German translation
 ))
 
 volunteering_db_de: list[Volunteering] = []
@@ -394,7 +392,7 @@ volunteering_db_de.append(Volunteering(
     title="Vorstandsmitglied",
     start_date="Juli 2013",
     end_date="Januar 2019",
-    description="""Als das damals jüngste Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein attraktiver für junge
+    description="""Als das damals jüngstes Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein attraktiver für junge
     Mitglieder zu machen. Ich erstellte und pflegte unsere Online-Präsenz."""
 ))
 volunteering_db_de.append(Volunteering(
@@ -403,12 +401,9 @@ volunteering_db_de.append(Volunteering(
     title="Veranstaltungsorganisator",
     start_date="Oktober 2014",
     end_date="Oktober 2018",
-    description="""Als Veranstaltungsorganisator im europäischen Netzwerk des Europäischen Jugendparlaments gehörte es zu meinen
-    Aufgaben das Veranstaltungs-Merchandising, die visuelle Identität der Veranstaltung und ihre IT-Infrastruktur für die bis zu 350
-    Teilnehmenden pro Veranstaltung zu erschaffen."""
+    description="""Im Rahmen meines Engagements beim Europäischen Jugendparlament war ich ehrenamtlich auf über 
+    40 mehrtägigen Veranstaltungen in verschiedenen europäischen Großstädten aktiv. Das Europäische
+    Jugendparlament veranstaltet Parlamentssimulationen mit einem ausgedehnten kulturellen Austausch- und
+    Rahmenprogramm. Zu meinen Aufgaben gehörten je nach Veranstaltung Gruppenmoderation, logistische
+    und technische Organisation sowie redaktionelle Arbeit im Rahmen der sozialen Medien der Veranstaltungen."""
 ))
-
-# """As an event organiser within the network of the European Youth Parliament I was responsbile for designing and 
-#     creating event merchandising, event's visual identities, as well as the IT infrastructure for the up to 350 participants per event.
-#     At the EYP network's flagship event in Laax, Switzerland in 2016 I was responsible for facilitating the inter team communication 
-#     between the 350 participants of the event."""

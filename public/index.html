@@ -14,7 +14,8 @@
 <div id="app">
     <div v-if="show_js_warning" class="xl:px-60 p-8 flex items-center justify-center flex-col">
         <p>You need JavaScript to view this page until I implement Server-Side-Rendering. Sorry!</p>
-        <p>Du brauchst JavaScript um diese Seite zu sehen, zumindest solange ich Server-Side-Rendering noch nicht implementiert habe. Tut mir Leid!</p>
+        <p>Du brauchst JavaScript um diese Seite zu sehen, zumindest solange ich Server-Side-Rendering noch nicht
+            implementiert habe. Tut mir Leid!</p>
     </div>
     <div :lang="language" v-cloak>
         <div class="xl:px-60 p-8">
@@ -46,16 +47,23 @@
                     <p class="mb-0">{{ exp.company }}</p>
                     <p class="mt-0">{{ exp.start_date }} — {{ exp.end_date }}</p>
                     <p v-html="exp.description"></p>
-                  </div>
+                </div>
 
-                  <h2>{{ elements['education_header'] }}</h2>
-                  <div v-for="edu in education">
-                      <h3 class="mb-0">{{ edu.title }}</h3>
-                      <p>{{ edu.start_date }} — {{ edu.end_date }} @ {{ edu.institute }}</p>
-  
-                      <p v-html="edu.description"></p>
-                    </div>
-  
+                <h2>{{ elements['education_header'] }}</h2>
+                <div v-for="edu in education">
+                    <h3 class="mb-0">{{ edu.title }}</h3>
+                    <p>{{ edu.start_date }} — {{ edu.end_date }} @ {{ edu.institute }}</p>
+
+                    <p v-html="edu.description"></p>
+                </div>
+
+                <h2>{{ elements['volunteering_header'] }}</h2>
+                <div v-for="vol in volunteering">
+                    <h3 class="mb-0">{{ vol.title }}</h3>
+                    <p>{{ vol.start_date }} — {{ vol.end_date }} @ {{ vol.organisation }}</p>
+
+                    <p v-html="vol.description"></p>
+                </div>
 
                 <div>
                     <h2>{{ elements['trivia_header'] }}</h2>
