@@ -81,7 +81,11 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     an essential tool for the continued operation of the events of the European Youth Parliament.
     <br><br>
     During my computer science studies at the University of Augsburg I've been tutor for Computer Science 
-    (C and Java 8) and mentored the one-week programming courses.""",
+    (C and Java 8) and mentored the one-week programming courses.
+    <br><br>
+    At TEAM23 I'd love to implement projects with a sense of purpose, and thus follow up on the projects that TEAM23 has 
+    has carried out so far. With Python as the tool of choice to create meaningful results, I'd be looking forward to
+    toast to our first successful ventures at the next mountain hike.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
     Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
@@ -96,7 +100,11 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     Jugendparlaments.
     <br><br>
     Während meines Informatikstudiums an der Universität Augsburg war ich Tutor für Informatik (C und Java 8)
-    und betreute die jeweils einwöchigen Programmierkurse."""
+    und betreute die jeweils einwöchigen Programmierkurse.
+    <br><br>
+    Bei TEAM23 möchte ich Projekte mit Sinn umsetzen und damit an die Projekte anschließen, die TEAM23 bisher 
+    durchgeführt hat. Ich würde mich sehr freuen, mit Python als Werkzeug der Wahl wirkungsvolle Ergebnisse zu 
+    erschaffen und als Teil des TEAM23 bei der nächsten Bergtour auf die ersten gemeinsamen Erfolge anzustoßen."""
 })
 element_db["experience_header"] = Element(name="experience_header", content={
     "en": "Experience",
