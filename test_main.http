@@ -9,3 +9,38 @@ GET http://127.0.0.1:8000/element/de/powered_by
 Accept: application/json
 
 ###
+
+GET http://127.0.0.1:8000/experiences/en
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/experiences/de
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/education/en
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/education/de
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/volunteering/en
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/volunteering/de
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/
+Accept: text/html
+
+###

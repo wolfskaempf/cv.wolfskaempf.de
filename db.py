@@ -50,7 +50,7 @@ class Volunteering(BaseModel):
 element_db: dict[str, Element] = {}
 element_db["powered_by"] = Element(name="powered_by", content={
     "en": "This CV is built with FastAPI, Vue and Tailwind CSS.",
-    "de": "Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erschaffen."
+    "de": "Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt."
 })
 element_db["image_alt"] = Element(name="image_alt", content={
     "en": "Profile picture of Tom Wolfskämpf",
@@ -76,7 +76,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     <a href = "https://eyp.org/" target = "_blank">European Youth Parliament</a>, where I've also been a member of the board
     of the German national committee between 2016 and 2018.
     <br><br>
-    To date, my largest project <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> has been used to 
+    To date, my largest project <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> has been used to 
     visualise debates and voting procedures at over 250 events in 40 different countries. During the pandemic it was
     an essential tool for the continued operation of the events of the European Youth Parliament.
     <br><br>
@@ -90,7 +90,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschem Vorstand ich von 2016 bis 2018 
     angehörte.
     <br><br>
-    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
+    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
@@ -122,7 +122,9 @@ experience_db_de.append(Experience(
     title="Tutor für Englisch und Deutsch",
     start_date="September 2013",
     end_date="Juli 2016",
-    description="Als Tutor für Englisch und Deutsch unterrichtete ich im Rahmen des Bildungs- und Teilhabepakets des Landes Niedersachsen an Real- und Grundschulen. Der Großteil meiner Kurse waren Englischkurse für Realschüler in der Sekundarstufe I. Mein Auftraggeber war die Volkshochschule Diepholz."
+    description="""Als Tutor für Englisch und Deutsch unterrichtete ich im Rahmen des Bildungs- und Teilhabepakets des 
+    Landes Niedersachsen an Real- und Grundschulen. Der Großteil meiner Kurse waren Englischkurse für Realschüler:innen 
+    in der Sekundarstufe I. Mein Auftraggeber war die Volkshochschule Diepholz."""
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -130,7 +132,8 @@ experience_db_de.append(Experience(
     title="Fahrradkurier",
     start_date="Februar 2018",
     end_date="Juli 2018",
-    description="Als Fahrradkurier lieferte ich Kunden ihr bestelltes Essen von verschiedenen Restaurants in Augsburg direkt bis an die Wohnungstür. Schnelle Lieferungen und ein hohes Maß an Kundenfreundlichkeit waren die Prioritäten meiner Tätigkeit."
+    description="""Als Fahrradkurier bei Foodora lieferte ich Kund:innen ihr bestelltes Essen von verschiedenen 
+    Restaurants in Augsburg direkt bis an die Wohnungstür."""
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -138,7 +141,9 @@ experience_db_de.append(Experience(
     title="Tutor für Informatik",
     start_date="Oktober 2017",
     end_date="Mai 2019",
-    description="Als Tutor für Informatik leitete ich wöchentlich eine Übungsgruppe, in der 30 Studierende die Grundlagen des Programmierens sowie die mathematischen Grundlagen der Informatik kennen lernten. Zudem korrigierte ich zusammen mit den anderen Tutoren die Prüfungen der Studierenden."
+    description="""Als Tutor für Informatik leitete ich wöchentlich eine Übungsgruppe, in der 30 Student:innen 
+    die Grundlagen des Programmierens sowie die mathematischen Grundlagen der Informatik kennenlernten. 
+    Zudem korrigierte ich zusammen mit den anderen Tutor:innen die Prüfungen der Student:innen."""
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -147,10 +152,10 @@ experience_db_de.append(Experience(
     start_date="November 2018",
     end_date="August 2019",
     description="""In der radiologischen Gemeinschaftspraxis „Radiologie im Zentrum GbR“ 
-    führte ich MRT-Untersuchungen an Patienten mit Knie-, Schulter- sowie HWS-, BWS- und LWS-Problemen durch. 
-    Ich betreute die Patienten von ihrer Ankunft bis hin zur Untersuchung, bei der ich mithilfe des MRT 
+    führte ich MRT-Untersuchungen an Patient:innen mit Knie-, Schulter- sowie HWS-, BWS- und LWS-Problemen durch. 
+    Ich betreute die Patient:innen von ihrer Ankunft bis hin zur Untersuchung, bei der ich mithilfe des MRT 
     „Symphony“ von Siemens die Bilder für die Grundlage des ärztlichen Befunds erstellte. 
-    Im Empfangsbereich sorgte ich für die Vorbereitung der Patienten auf die Untersuchung, 
+    Im Empfangsbereich sorgte ich für die Vorbereitung der Patient:innen auf die Untersuchung, 
     verwaltete die Patientenakten und erstellte ihre Fallakten. Zudem kümmerte ich mich um den Versand der 
     fertigen Befunde."""
 ))
@@ -164,14 +169,14 @@ experience_db_de.append(Experience(
     die Debatten und Abstimmungen der Vollversammlungen und automatisierte zeitaufwändige interne Prozesse bei
     einer gleichzeitigen Verbesserung der Ergebnisqualität.
     <br><br>
-    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">GA Statistics</a> wurde seit 2015 auf über 
-    250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
-    ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
-    Jugendparlaments.
+    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> wurde seit
+     2015 auf über 250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu 
+     visualisieren und ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des 
+     Europäischen Jugendparlaments.
     <br><br>
-    Zuletzt beriet ich hauptsächlich die Projektmanager des Internationalen Büros des EJP darin, 
+    Zuletzt beriet ich hauptsächlich die Projektmanager:innen des Internationalen Büros des EJP darin, 
     ihre Wünsche in eine verbindliche Sprache zu übersetzen, die auch von extern beschäftigten 
-    Webentwicklern verstanden wird.
+    Webentwickler:innen verstanden wird.
     """
 ))
 experience_db_de.append(Experience(
@@ -180,11 +185,11 @@ experience_db_de.append(Experience(
     title="Werkstudent in der Radiologie",
     start_date="August 2019",
     end_date="heute",
-    description="""Ich nehme mir viel Zeit für unsere Patienten, erstelle eine detaillierte Anamnese 
-    mit Ihnen und optimiere die Sequenzen und Parameter der MRT-Untersuchung auf die Bedürfnisse des Patienten
-    und der Untersuchung. Mit viel Freude erarbeite ich gemeinsam mit unseren Doktoren und Medizinprofessoren
-    die tomographische Wissensgrundlage mit Hilfe derer die optimale medizinische Versorgung für die Patienten
-    ausgearbeitet wird.
+    description="""Ich nehme mir viel Zeit für unsere Patient:innen, erstelle eine detaillierte Anamnese 
+    mit ihnen und optimiere die Sequenzen und Parameter der MRT-Untersuchung auf die Bedürfnisse der Patient:innen
+    und der Untersuchung. Mit viel Freude erarbeite ich gemeinsam mit unseren Doktor:innen und Medizinprofessoren
+    die tomographische Wissensgrundlage mit Hilfe derer eine möglichst gute medizinische Versorgung für die 
+    Patient:innen ausgearbeitet wird.
     <br><br>
     Neben der technischen Durchführung der MRT-Untersuchungen von Köpfen und Wirbelsäulen an Siemens Avanto und
     Vida gehört auch die Abrechnung und das Verabreichen des Kontrastmittels zu meinen Aufgaben.
@@ -210,7 +215,7 @@ experience_db_en.append(Experience(
     start_date="February 2018",
     end_date="July 2018",
     description="""What is it like to work in an app-based economy? To gather some first-hand experience, 
-    I worked with foodora as a bike courier. I deliver food and beverages by bike while an app guides me 
+    I worked with foodora as a bike courier. I delivered food and beverages by bike while an app guided me 
     through my workday.
     """
 ))
@@ -303,7 +308,7 @@ education_db_en.append(Education(
     title="Medical Information Science, B. Sc.",
     start_date="2018",
     end_date="2020",
-    description="Due to the Covid-19 pandemic, this major is unfinished for now."
+    description="Due to the Covid-19 pandemic, this major is not finished yet."
 ))
 
 education_db_de: list[Education] = []
@@ -330,7 +335,7 @@ education_db_de.append(Education(
     title="Medizinische Informatik, B. Sc.",
     start_date="2018",
     end_date="2020",
-    description="Auf Grund der Covid-19-Pandemie schloss ich dieses Studium bisher nicht ab."
+    description="Aufgrund der Covid-19-Pandemie ist dieses Studium bisher noch nicht abgeschlossen."
 ))
 
 volunteering_db_en: list[Volunteering] = []
@@ -375,16 +380,17 @@ volunteering_db_de: list[Volunteering] = []
 volunteering_db_de.append(Volunteering(
     language=Language.de,
     organisation="Europäisches Jugendparlament in Deutschland e.V.",
-    title="Vorstandsmitlied",
+    title="Vorstandsmitglied",
     start_date="Juni 2016",
     end_date="Juni 2018",
-    description="""Das Netzwerk des Europäischen Jugendparlaments (EJP) erstreckt sich über insgesamt 40 europäische Länder, 
-    auch außerhalb der EU. Kernaufgabe meines Vorstandsressorts war es, den internationalen Teilnehmendenaustausch zu organisieren und
-    Deutschland auf den Internationalen Treffen der Vorstände zu repräsentieren.
+    description="""Das Netzwerk des Europäischen Jugendparlaments (EJP) erstreckt sich über insgesamt 40 europäische 
+    Länder, auch außerhalb der EU. Kernaufgabe meines Vorstandsressorts war es, den internationalen 
+    Teilnehmer:innenaustausch zu organisieren und Deutschland auf den internationalen Treffen der Vorstände zu 
+    repräsentieren.
     <br><br>
-    Zudem war ich für die interne IT-Infrastruktur und unsere interne Kommunikationsstrategie verantwortlich. Um unsere internen
-    Prozesse zu verbessern, entwickelte ich Anwendungen, die noch heute zeitintensive Aufgaben automatisieren und die Ergebnisqualität 
-    deutlich anhoben."""
+    Zudem war ich für die interne IT-Infrastruktur und unsere interne Kommunikationsstrategie verantwortlich. Um unsere 
+    internen Prozesse zu verbessern, entwickelte ich Anwendungen, die die Ergebnisqualität deutlich anhoben und noch 
+    heute zeitintensive Aufgaben automatisieren."""
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
@@ -392,8 +398,8 @@ volunteering_db_de.append(Volunteering(
     title="Vorstandsmitglied",
     start_date="Juli 2013",
     end_date="Januar 2019",
-    description="""Als das damals jüngstes Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein attraktiver für junge
-    Mitglieder zu machen. Ich erstellte und pflegte unsere Online-Präsenz."""
+    description="""Als das damals jüngstes Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein 
+    attraktiver für junge Mitglieder zu machen. Ich erstellte und pflegte unsere Online-Präsenz."""
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
