@@ -132,7 +132,10 @@ experience_db_de.append(Experience(
     end_date="Juli 2016",
     description="""Als Tutor für Englisch und Deutsch unterrichtete ich im Rahmen des Bildungs- und Teilhabepakets des 
     Landes Niedersachsen an Real- und Grundschulen. Der Großteil meiner Kurse waren Englischkurse für Realschüler:innen 
-    in der Sekundarstufe I. Mein Auftraggeber war die Volkshochschule Diepholz."""
+    in der Sekundarstufe I.
+    <br><br>
+    Während meiner Arbeit für das Bildungs- und Teilhabepaket nahm ich an einem mehrjährigen Wochenendkurs für die
+    Basisqualifikation Pädagogik teil und wurde erfolgreich dafür zertifiziert."""
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -214,6 +217,9 @@ experience_db_en.append(Experience(
     description="""I teach English and German to individuals and small groups as 
     part of the Bildungs und Teilhabepaket (Education and Participation Package) 
     funded by the Federal Republic of Germany.
+    <br><br>
+    As part of my involvement with the programme, I took part in a multi-year ongoing qualification course for basic 
+    pedagogics and was certified for those abilities.
     """
 ))
 experience_db_en.append(Experience(
@@ -249,7 +255,7 @@ experience_db_en.append(Experience(
     shoulder and knee patients by taking the time to build a detailed overview of their case history and 
     new symptoms and then conducting the MRI examination to best suit their needs. Working with our 
     doctors and medical professors, it was a pleasure to be serving our community by building the 
-    foundation of knowledge that allows our patients to recieve the optimal medical care, based on 
+    foundation of knowledge that allows our patients to receive the optimal medical care, based on 
     tomographic evidence."""
 ))
 experience_db_en.append(Experience(
@@ -276,10 +282,10 @@ experience_db_en.append(Experience(
     description="""I go above and beyond for my patients by taking the time to build a detailed overview 
     of their case history and new symptoms and then optimising the MRI examination to best suit their needs. 
     Working with our doctors and medical professors, it is a pleasure to be serving our community by 
-    building the foundation of knowledge that allows our patients to recieve the optimal medical care, 
+    building the foundation of knowledge that allows our patients to receive the optimal medical care, 
     based on tomographic evidence.
-    
-    <br><br>My main area of work is conducting neurological MRI scans of brains 
+    <br><br>
+    My main area of work is conducting neurological MRI scans of brains 
     and spines on Siemens MRIs, as well as medical accounting and administering contrast agent during the 
     examinations.
     """
@@ -349,6 +355,30 @@ education_db_de.append(Education(
 volunteering_db_en: list[Volunteering] = []
 volunteering_db_en.append(Volunteering(
     language=Language.en,
+    organisation="Fridays for Future",
+    title="Web Developer and Organiser",
+    start_date="August 2019",
+    end_date="today",
+    description="""To ensure that the Paris Climate Agreement of 2015 will be politically implemented, I organise
+    political protests with Fridays for Future and have spoken with politicians, including those who represent us in the 
+    European Parliament. As a group moderator I help create meetings with a productive and friendly environment.
+    <br><br>
+    I develop and run multiple web applications with Python, Django/Flask and Docker, that automate internal and 
+    external 
+    organisational procedures. External people who would like to support us can view tasks they could work on in a 
+    <a href="https://github.com/wolfskaempf/helfffen" target="_blank">helpers portal</a>, where they can also directly 
+    contact us if they choose to do a task. Internally, another app organises our 
+    <a href="https://github.com/wolfskaempf/tops" target="_blank">topics of discussion</a> in a way, that ensures we 
+    don't miss deadlines and thanks to the connected  
+    <a href="https://github.com/wolfskaempf/elektronenhirn" target="_blank">chat bot</a> we will get notifications right
+    where we see them.
+    <br><br>
+    With Docker and Ansible I also run various other web applications that allow privacy friendly online-collaboration
+    since the start of the pandemic.
+    """
+))
+volunteering_db_en.append(Volunteering(
+    language=Language.en,
     organisation="European Youth Parliament Germany",
     title="Member of the Board",
     start_date="June 2016",
@@ -378,13 +408,36 @@ volunteering_db_en.append(Volunteering(
     title="Event Organiser",
     start_date="October 2014",
     end_date="October 2018",
-    description="""As an event organiser within the network of the European Youth Parliament I was responsbile for designing and 
-    creating event merchandising, event's visual identities, as well as the IT infrastructure for the up to 350 participants per event.
-    At the EYP network's flagship event in Laax, Switzerland in 2016 I was responsible for facilitating the inter team communication 
-    between the 350 participants of the event."""  # TODO: Fit to German translation
+    description="""As part of my engagement at the European Youth Parliament, I was a volunteer at over 40 multi-day
+    events in different european cities. Depending on the event, my responsibilities ranged from group moderation,
+     logistics and technical aspects or editorial work as part of the events social media."""
 ))
 
+
 volunteering_db_de: list[Volunteering] = []
+volunteering_db_de.append(Volunteering(
+    language=Language.de,
+    organisation="Fridays for Future",
+    title="Webentwickler und Organisator",
+    start_date="August 2019",
+    end_date="heute",
+    description="""Damit das Pariser Klimaabkommen von 2015 auch politisch umgesetzt wird, organisiere ich bei Fridays
+    for Future Demonstrationen und führe Gespräche mit Politiker:innen, die uns unter anderem im Europäischen Parlament 
+    repräsentieren. Als Gruppenmoderator sorge ich für produktive Treffen mit positiver Stimmung.
+    <br><br>
+    Ich entwickle und betreibe für FFF Webanwendungen mit Python, Django bzw. Flask, und Docker, mit denen interne und 
+    externe Organisationsabläufe automatisiert werden. So können sich Menschen in einem 
+    <a href="https://github.com/wolfskaempf/helfffen" target="_blank">Helfer:innenportal</a> bequem ansehen, welche 
+    Aufgaben sie übernehmen könnten und haben die Möglichkeit sich direkt auf 
+    der Seite bei uns zu melden. Intern organisiert eine andere Anwendung 
+    <a href="https://github.com/wolfskaempf/tops" target="_blank">Tagesordnungspunkte</a> so, dass keine Fristen 
+    verpasst werden und dank <a href="https://github.com/wolfskaempf/elektronenhirn" target="_blank">Chatbot</a> nichts 
+    unter den Tisch fällt.
+    <br><br>
+    Mit Docker und Ansible betreibe ich für die Klimagerechtigkeitsbewegung noch diverse andere interne Webanwendungen, 
+    die datenschutzfreundlich die digitale Zusammenarbeit seit Beginn der Covid-19-Pandemie ermöglichen.
+    """
+))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
     organisation="Europäisches Jugendparlament in Deutschland e.V.",
@@ -416,8 +469,7 @@ volunteering_db_de.append(Volunteering(
     start_date="Oktober 2014",
     end_date="Oktober 2018",
     description="""Im Rahmen meines Engagements beim Europäischen Jugendparlament war ich ehrenamtlich auf über 
-    40 mehrtägigen Veranstaltungen in verschiedenen europäischen Großstädten aktiv. Das Europäische
-    Jugendparlament veranstaltet Parlamentssimulationen mit einem ausgedehnten kulturellen Austausch- und
-    Rahmenprogramm. Zu meinen Aufgaben gehörten je nach Veranstaltung Gruppenmoderation, logistische
-    und technische Organisation sowie redaktionelle Arbeit im Rahmen der sozialen Medien der Veranstaltungen."""
+    40 mehrtägigen Veranstaltungen in verschiedenen europäischen Großstädten aktiv. Zu meinen Aufgaben gehörten je nach 
+    Veranstaltung Gruppenmoderation, logistische und technische Organisation sowie redaktionelle Arbeit im Rahmen der 
+    sozialen Medien der Veranstaltungen."""
 ))
