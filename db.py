@@ -113,7 +113,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     <br><br>
     At TEAM23 I'd love to implement projects with a sense of purpose, and thus follow up on the projects that TEAM23 has 
     has carried out so far. With Python as the tool of choice to create meaningful results, I'd be looking forward to
-    toast to our first successful ventures at the next mountain hike.""",
+    toast to our first successful ventures together at the next mountain hike.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
     Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
