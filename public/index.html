@@ -4,6 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="description" content="Tom Wolfskämpf, Bewerbung als Backend-Python-Entwickler">
+    <meta property="og:title" content="Tom Wolfskämpf">
+    <meta property="og:description" content="Tom Wolfskämpf, Bewerbung als Backend-Python-Entwickler">
+    <meta property="og:site_name" content="Tom Wolfskämpf">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cv.wolfskaempf.de">
+    <meta property="og:image" content="https://cv.wolfskaempf.de/images/profilepicture-lg.jpeg">
+
     <link rel="stylesheet" href="/css/output.css">
     <title>Tom Wolfskämpf</title>
 
@@ -12,7 +27,7 @@
 </head>
 <body>
 <div id="app">
-    <div v-if="show_js_warning" class="xl:px-60 p-8 flex items-center justify-center flex-col">
+    <div v-if="show_js_warning" class="xl:px-60 p-8 flex items-center justify-center text-center flex-col">
         <p>You need JavaScript to view this page until I implement Server-Side-Rendering. Sorry!</p>
         <p>Du brauchst JavaScript um diese Seite zu sehen, zumindest solange ich Server-Side-Rendering noch nicht
             implementiert habe. Tut mir Leid!</p>
@@ -21,27 +36,33 @@
         <div class="xl:px-60 p-8">
             <div class="relative">
                 <div class="absolute right-1">
-                    <button class="rounded bg-blue-100 hover:bg-blue-200 ease-linear duration-100 p-1" @click="switchLanguage">
-                        {{ elements['switch_language'] }}
+                    <button class="rounded bg-blue-100 hover:bg-blue-200 ease-linear duration-100 p-1"
+                            @click="switchLanguage">
+                        {{ elements.switch_language }}
                     </button>
                 </div>
             </div>
             <div class="flex items-center justify-center flex-wrap gap-x-20 gap-y-12">
                 <img class="rounded-full lg:w-1/4 md:w-1/3 sm:w-1/2 w-5/6" src="/images/profilepicture-sm.jpeg"
-                     :alt="elements['image_alt']">
+                     :alt="elements.image_alt">
                 <div class="relative text-center">
                     <h1 class="text-5xl ">Tom Wolfskämpf</h1>
-                    <p>{{ elements['application_as'] }}</p>
+                    <p>{{ elements.application_as }}</p>
+                    <p>
+                        <a href="https://wolfskaempf.de" target="_blank">{{ elements.website }}</a> |
+                        <a href="https://github.com/wolfskaempf" target="_blank">GitHub</a> |
+                        <a href="https://www.linkedin.com/in/tom-wolfsk%C3%A4mpf/" target="_blank">LinkedIn</a>
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="xl:px-64 lg:px-32 md:px-16 p-8">
             <div class="prose md:prose-xl">
-                <h2>{{ elements['glance_header'] }}</h2>
-                <p v-html="elements['glance_copy']"></p>
+                <h2>{{ elements.glance_header }}</h2>
+                <p v-html="elements.glance_copy"></p>
 
-                <h2>{{ elements['experience_header'] }}</h2>
+                <h2>{{ elements.experience_header }}</h2>
                 <div v-for="exp in experiences">
                     <h3 class="mb-0">{{ exp.title }}</h3>
                     <p class="mb-0">{{ exp.company }}</p>
@@ -49,7 +70,7 @@
                     <p v-html="exp.description"></p>
                 </div>
 
-                <h2>{{ elements['education_header'] }}</h2>
+                <h2>{{ elements.education_header }}</h2>
                 <div v-for="edu in education">
                     <h3 class="mb-0">{{ edu.title }}</h3>
                     <p>{{ edu.start_date }} — {{ edu.end_date }} @ {{ edu.institute }}</p>
@@ -57,7 +78,7 @@
                     <p v-html="edu.description"></p>
                 </div>
 
-                <h2>{{ elements['volunteering_header'] }}</h2>
+                <h2>{{ elements.volunteering_header }}</h2>
                 <div v-for="vol in volunteering">
                     <h3 class="mb-0">{{ vol.title }}</h3>
                     <p class="mb-0">{{ vol.organisation }}</p>
@@ -67,24 +88,26 @@
                 </div>
 
                 <div>
-                    <h2>{{ elements['trivia_header'] }}</h2>
+                    <h2>{{ elements.trivia_header }}</h2>
                     <ul>
                         <li v-for="trv in trivia" v-html="trv.content"></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2>{{ elements['personal_data_header'] }}</h2>
+                    <h2>{{ elements.personal_data_header }}</h2>
                     <div v-if="personal_data_success">
-                        <p class="mb-0">{{ personal_data.name }}, {{ elements['born'] }} {{ personal_data.date_of_birth }}</p>
+                        <p class="mb-0">{{ personal_data.name }}, {{ elements.born }} {{
+                                personal_data.date_of_birth
+                            }}</p>
                         <p class="mt-0 mb-0">{{ personal_data.address_street }}</p>
-                        <p class="mt-0 mb-0">{{ personal_data.address_zip }} {{ personal_data.address_city}}</p>
-                        <p class="mt-0 mb-0">{{ elements['telephone']}}: {{ personal_data.telephone }}</p>
-                        <p class="mt-0 mb-0">{{ elements['email']}}: {{ personal_data.email }}</p>
-                        <p class="mt-0 mb-0">{{ elements['nationality'] }}: {{ personal_data.nationality }}</p>
+                        <p class="mt-0 mb-0">{{ personal_data.address_zip }} {{ personal_data.address_city }}</p>
+                        <p class="mt-0 mb-0">{{ elements.telephone }}: {{ personal_data.telephone }}</p>
+                        <p class="mt-0 mb-0">{{ elements.email }}: {{ personal_data.email }}</p>
+                        <p class="mt-0 mb-0">{{ elements.nationality }}: {{ personal_data.nationality }}</p>
                     </div>
                     <div v-else>
-                        <p>{{ elements['personal_data_access_denied'] }}</p>
+                        <p>{{ elements.personal_data_access_denied }}</p>
                     </div>
                 </div>
             </div>

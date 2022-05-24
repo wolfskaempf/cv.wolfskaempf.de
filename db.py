@@ -76,13 +76,13 @@ class PersonalData(BaseModel):
 
 # Since all elements are well-defined through pydantic, connecting a database later is no issue
 element_db: dict[str, Element] = {}
-element_db["powered_by"] = Element(name="powered_by", content={
-    "en": "This CV is built with FastAPI, Vue and Tailwind CSS.",
-    "de": "Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt."
-})
 element_db["image_alt"] = Element(name="image_alt", content={
     "en": "Profile picture of Tom Wolfskämpf",
     "de": "Profilbild von Tom Wolfskämpf"
+})
+element_db["website"] = Element(name="website", content={
+    "en": "Website",
+    "de": "Webseite"
 })
 element_db["switch_language"] = Element(name="switch_language", content={
     "en": "Wechsle zu Deutsch",
