@@ -154,7 +154,13 @@ experience_db_de.append(Experience(
     end_date="Mai 2019",
     description="""Als Tutor für Informatik leitete ich wöchentlich eine Übungsgruppe, in der 30 Student:innen 
     die Grundlagen des Programmierens sowie die mathematischen Grundlagen der Informatik kennenlernten. 
-    Zudem korrigierte ich zusammen mit den anderen Tutor:innen die Prüfungen der Student:innen."""
+    Zudem korrigierte ich zusammen mit den anderen Tutor:innen die Prüfungen der Student:innen.
+    <br><br>
+    Nachdem 2018 aufgrund der Einführung der DSGVO das bisherige universitäre Werkzeug zum präferenzbasierten 
+    Verteilen der Übungsteilnehmer:innen vom Lehrstuhl für Theoretische Informatik offline genommen wurde, programmierte 
+    ich <a href="https://www.youtube.com/watch?v=JM6i0Hb757A" target="_blank">Loki</a> (JavaFX 8), welches sowohl an der
+     Universität Augsburg für die Verteilung der Student:innen auf die Informatiktutorien, als auch beim Europäischen 
+     Jugendparlament für die Verteilung von Teilnehmer:innen an ihre präferierten Themenbereiche verwendet wurde."""
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -200,7 +206,7 @@ experience_db_de.append(Experience(
     mit ihnen und optimiere die Sequenzen und Parameter der MRT-Untersuchung auf die Bedürfnisse der Patient:innen
     und der Untersuchung. Mit viel Freude erarbeite ich gemeinsam mit unseren Doktor:innen und Medizinprofessoren
     die tomographische Wissensgrundlage mit Hilfe derer eine möglichst gute medizinische Versorgung für die 
-    Patient:innen ausgearbeitet wird.
+    Patient:innen vorbereitet wird.
     <br><br>
     Neben der technischen Durchführung der MRT-Untersuchungen von Köpfen und Wirbelsäulen an Siemens Avanto und
     Vida gehört auch die Abrechnung und das Verabreichen des Kontrastmittels zu meinen Aufgaben.
@@ -243,6 +249,12 @@ experience_db_en.append(Experience(
     by teaching them the practical parts of computer science in courses about C and Java 8. By building a 
     strong community amongst the students in my courses, I helped them stay on track with their studies 
     and appreciate the benefits peer-to-peer-education in them.
+    <br><br>
+    After the university's tool for preference based allocations had been discontinued in 2018 by the chair of 
+    theoretical computer science due to new GDPR rules, I created 
+    <a href="https://www.youtube.com/watch?v=JM6i0Hb757A" target="_blank">Loki</a> (JavaFX 8), which was used by 
+    the University of Augsburg for the allocation of students to their computer science courses and by the 
+    European Youth Parliament for the allocation of the hundreds of participants to their preferred topics.
     """
 ))
 experience_db_en.append(Experience(
