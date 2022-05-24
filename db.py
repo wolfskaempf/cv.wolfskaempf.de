@@ -431,7 +431,6 @@ volunteering_db_en.append(Volunteering(
      logistics and technical aspects or editorial work as part of the events social media."""
 ))
 
-
 volunteering_db_de: list[Volunteering] = []
 volunteering_db_de.append(Volunteering(
     language=Language.de,
@@ -492,7 +491,6 @@ volunteering_db_de.append(Volunteering(
     sozialen Medien der Veranstaltungen."""
 ))
 
-
 trivia_db_en: list[Trivia] = []
 trivia_db_en.append(Trivia(
     language=Language.en,
@@ -508,7 +506,26 @@ trivia_db_en.append(Trivia(
      target="_blank">talk about the German health care system</a>, that really brought me to the edge of my 
      interpretation abilities."""
 ))
-
+trivia_db_en.append(Trivia(
+    language=Language.en,
+    content="""I prefer tea over coffee, spring and autumn are the best seasons of the year and cats and dogs are 
+    equally awesome."""
+))
+trivia_db_en.append(Trivia(
+    language=Language.en,
+    content="""I am passionate about cyber security. At 
+    <a href="https://app.hackthebox.com/users/531118" target="_blank">HackTheBox</a>, a cyber-security 
+    competition-platform, I am globally ranked #482, and on 
+    <a href="https://tryhackme.com/p/wolfskto" target="_blank">TryHackMe</a>, a cyber-security learning-platform, 
+    I am in the global top&nbsp3&nbsp%."""
+))
+trivia_db_en.append(Trivia(
+    language=Language.en,
+    content="""Using this 3D-printed 
+    <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">replacement part</a>, 
+    that I designed for the 3 tesla MRI Siemens Vida, we have already saved a few thousand euros of repair costs,
+    as the original part can only be purchased together with a technicians appointment."""
+))
 
 trivia_db_de: list[Trivia] = []
 trivia_db_de.append(Trivia(
@@ -518,9 +535,30 @@ trivia_db_de.append(Trivia(
 trivia_db_de.append(Trivia(
     language=Language.de,
     content="""Auf dem 36C3 dolmetschte ich einige Vorträge, unter anderem den
-             legendären <a href="https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier#l=eng&t=45"
-             target="_blank">BahnMining-Vortrag</a> von David Kriesel oder einen hoch-technischen 
-             <a href="https://media.ccc.de/v/36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti#l=eng"
-             target="_blank">Talk über das deutsche Gesundheitswesen</a>, in dem ich wirklich an meine 
-             dolmetscherischen Limits gebracht wurde."""
+    legendären <a href="https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier#l=eng&t=45"
+    target="_blank">BahnMining-Vortrag</a> von David Kriesel oder einen hoch-technischen 
+    <a href="https://media.ccc.de/v/36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti#l=eng"
+    target="_blank">Talk über das deutsche Gesundheitswesen</a>, in dem ich wirklich an meine 
+    dolmetscherischen Grenzen gebracht wurde."""
+))
+trivia_db_de.append(Trivia(
+    language=Language.de,
+    content="""Tee trinke ich lieber als Kaffee, Frühling und Herbst sind die besten Jahreszeiten, Katzen und Hunde sind
+    gleichermaßen wunderbare Tiere."""
+))
+trivia_db_de.append(Trivia(
+    language=Language.de,
+    content="""Ich habe eine Leidenschaft für IT-Sicherheit. 
+    Auf <a href="https://app.hackthebox.com/users/531118" target="_blank">HackTheBox</a>, einer 
+    IT-Sicherheits-Wettbewerbs-Plattform bin ich im globalen Ranking auf Platz 482 und auf 
+    <a href="https://tryhackme.com/p/wolfskto" target="_blank">TryHackMe</a>, einer IT-Sicherheits-Lernplattform bin 
+    ich in den globalen Top 3&nbsp%."""
+))
+trivia_db_de.append(Trivia(
+    language=Language.de,
+    content="""Mit diesem 3D-gedruckten 
+    <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">Ersatzteil</a>, 
+    das ich für das 3 Tesla MRT Siemens Vida entworfen habe, haben wir schon mehrere tausend Euro Reparaturkosten 
+    gespart, da die Originalteile immer wieder zerbrachen und nur zusammen mit einem Technikereinsatz gekauft werden 
+    konnten."""
 ))
