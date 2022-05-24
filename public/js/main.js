@@ -8,6 +8,7 @@ createApp({
             experiences: null,
             education: null,
             volunteering: null,
+            trivia: null,
             language: 'de'
         }
     },
@@ -25,6 +26,9 @@ createApp({
             fetch('/volunteering/' + this.language)
                 .then(response => response.json())
                 .then(data => this.volunteering = data);
+            fetch('/trivia/' + this.language)
+                .then(response => response.json())
+                .then(data => this.trivia = data);
         },
         switchLanguage() {
             if (this.language === "en") {

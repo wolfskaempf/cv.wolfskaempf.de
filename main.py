@@ -2,8 +2,13 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 
-from db import element_db, experience_db_de, experience_db_en, education_db_de, education_db_en, Language
+from db import Language
+from db import element_db
+from db import experience_db_de, experience_db_en
+from db import education_db_de, education_db_en
 from db import volunteering_db_de, volunteering_db_en
+from db import trivia_db_de, trivia_db_en
+
 
 app = FastAPI()
 
@@ -42,6 +47,15 @@ async def get_education(language: Language):
         return volunteering_db_en
     elif language == Language.de:
         return volunteering_db_de
+
+
+@app.get("/trivia/{language}")
+async def get_trivia(language: Language):
+    """Returns the pre-sorted entries of the corresponding list"""
+    if language == Language.en:
+        return trivia_db_en
+    elif language == Language.de:
+        return trivia_db_de
 
 
 # If none of the API routes match, serve the static content that makes up out Vue app

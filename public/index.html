@@ -69,7 +69,7 @@
                 <div>
                     <h2>{{ elements['trivia_header'] }}</h2>
                     <ul class="list-disc list-inside">
-                        <li>{{ elements['powered_by'] }}</li>
+                        <li v-for="trv in trivia" v-html="trv.content"></li>
                     </ul>
                 </div>
             </div>

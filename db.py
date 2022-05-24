@@ -45,6 +45,12 @@ class Volunteering(BaseModel):
     description: str
 
 
+class Trivia(BaseModel):
+    """Objects of this type contain all attributes of one piece of trivia"""
+    language: Language
+    content: str
+
+
 # For the purposes of this CV, using a real database would be a bit overkill
 # Since all elements are well-defined through pydantic, connecting a database later is no issue
 element_db: dict[str, Element] = {}
@@ -484,4 +490,37 @@ volunteering_db_de.append(Volunteering(
     40 mehrtägigen Veranstaltungen in verschiedenen europäischen Großstädten aktiv. Zu meinen Aufgaben gehörten je nach 
     Veranstaltung Gruppenmoderation, logistische und technische Organisation sowie redaktionelle Arbeit im Rahmen der 
     sozialen Medien der Veranstaltungen."""
+))
+
+
+trivia_db_en: list[Trivia] = []
+trivia_db_en.append(Trivia(
+    language=Language.en,
+    content="This CV is built with FastAPI, Vue and Tailwind CSS."
+))
+trivia_db_en.append(Trivia(
+    language=Language.en,
+    content="""At the 36C3 I interpreted (translated) various talks,
+     among them the legendary 
+     <a href="https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier#l=eng&t=45" target="_blank">
+     BahnMining-Talk</a> held by David Kriesel or a highly technical 
+     <a href="https://media.ccc.de/v/36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti#l=eng"
+     target="_blank">talk about the German health care system</a>, that really brought me to the edge of my 
+     interpretation abilities."""
+))
+
+
+trivia_db_de: list[Trivia] = []
+trivia_db_de.append(Trivia(
+    language=Language.de,
+    content="Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt."
+))
+trivia_db_de.append(Trivia(
+    language=Language.de,
+    content="""Auf dem 36C3 dolmetschte ich einige Vorträge, unter anderem den
+             legendären <a href="https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier#l=eng&t=45"
+             target="_blank">BahnMining-Vortrag</a> von David Kriesel oder einen hoch-technischen 
+             <a href="https://media.ccc.de/v/36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti#l=eng"
+             target="_blank">Talk über das deutsche Gesundheitswesen</a>, in dem ich wirklich an meine 
+             dolmetscherischen Limits gebracht wurde."""
 ))
