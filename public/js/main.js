@@ -9,6 +9,8 @@ createApp({
             education: null,
             volunteering: null,
             trivia: null,
+            personal_data: {},
+            personal_data_success: false,
             language: 'de'
         }
     },
@@ -37,9 +39,18 @@ createApp({
                 this.language = "en"
             }
             this.fetchData();
+        },
+        processPersonalDataPromise(data) {
+            if (data['status_code'] !== 401) {
+                this.personal_data = data;
+                this.personal_data_success = true;
+            }
         }
     },
     mounted() {
         this.fetchData();
+        fetch('/personal_data?secret=' + document.location.hash.substring(1))
+            .then(response => response.json())
+            .then(data => this.processPersonalDataPromise(data));
     },
 }).mount('#app')

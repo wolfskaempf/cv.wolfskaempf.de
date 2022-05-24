@@ -1,6 +1,7 @@
 from enum import Enum
+from datetime import date, datetime
 
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 
 
 class Language(str, Enum):
@@ -51,7 +52,28 @@ class Trivia(BaseModel):
     content: str
 
 
-# For the purposes of this CV, using a real database would be a bit overkill
+class PersonalData(BaseModel):
+    """Objects of this type contain all personal data of a person"""
+    name: str
+    telephone: str  # We define it as a str because we want to include a + in the beginning as well as spacing
+    email: str
+    address_street: str
+    address_zip: int
+    address_city: str
+    nationality: str
+    date_of_birth: str
+
+    @validator("date_of_birth", pre=True)
+    def validate_date_of_birth(cls, value):
+        try:
+            datetime.strptime(value, "%d.%m.%Y")
+        except ValueError:
+            raise ValueError("The supplied date of birth could not be parsed into a valid date (DD-MM-YYYY).")
+        return value
+
+        # For the purposes of this CV, using a real database would be a bit overkill
+
+
 # Since all elements are well-defined through pydantic, connecting a database later is no issue
 element_db: dict[str, Element] = {}
 element_db["powered_by"] = Element(name="powered_by", content={
@@ -128,6 +150,33 @@ element_db["trivia_header"] = Element(name="trivia_header", content={
     "en": "Trivia",
     "de": "Trivia"
 })
+element_db["personal_data_header"] = Element(name="personal_data_header", content={
+    "en": "Personal data",
+    "de": "Persönliche Daten"
+})
+element_db["born"] = Element(name="born", content={
+    "en": "born",
+    "de": "geb."
+})
+element_db["telephone"] = Element(name="telephone", content={
+    "en": "Telephone",
+    "de": "Mobil"
+})
+element_db["email"] = Element(name="email", content={
+    "en": "Mail",
+    "de": "E-Mail"
+})
+element_db["nationality"] = Element(name="nationality", content={
+    "en": "Nationality",
+    "de": "Staatsangehörigkeit"
+})
+element_db["personal_data_access_denied"] = Element(name="personal_data_access_denied", content={
+    "en": """Personal data is only shown if you access this site with the name of your company inside the hash of the 
+    URL""",
+    "de": """Die Persönlichen Daten werden nur angezeigt, wenn du den Link mit dem Namen Deiner Firma im Hash der 
+    URL aufrufst."""
+})
+
 
 experience_db_de: list[Experience] = []
 experience_db_de.append(Experience(

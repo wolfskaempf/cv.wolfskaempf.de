@@ -1,46 +1,133 @@
 # Test your FastAPI endpoints
 
-GET http://127.0.0.1:8000/element/en/powered_by
+GET http://127.0.0.1:8000/elements/en
 Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###
 
-GET http://127.0.0.1:8000/element/de/powered_by
+GET http://127.0.0.1:8000/elements/de
 Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###
 
 GET http://127.0.0.1:8000/experiences/en
 Accept: application/json
 
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
 ###
 
 GET http://127.0.0.1:8000/experiences/de
 Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###
 
 GET http://127.0.0.1:8000/education/en
 Accept: application/json
 
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
 ###
 
 GET http://127.0.0.1:8000/education/de
 Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###
 
 GET http://127.0.0.1:8000/volunteering/en
 Accept: application/json
 
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
 ###
 
 GET http://127.0.0.1:8000/volunteering/de
 Accept: application/json
 
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://127.0.0.1:8000/trivia/en
+Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://127.0.0.1:8000/trivia/de
+Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://127.0.0.1:8000/personal_data?secret={{CV_PERSONAL_DATA_SECRET}}
+Accept: application/json
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
 ###
 
 GET http://127.0.0.1:8000/
 Accept: text/html
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###

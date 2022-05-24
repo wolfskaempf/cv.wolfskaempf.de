@@ -72,6 +72,21 @@
                         <li v-for="trv in trivia" v-html="trv.content"></li>
                     </ul>
                 </div>
+
+                <div>
+                    <h2>{{ elements['personal_data_header'] }}</h2>
+                    <div v-if="personal_data_success">
+                        <p class="mb-0">{{ personal_data.name }}, {{ elements['born'] }} {{ personal_data.date_of_birth }}</p>
+                        <p class="mt-0 mb-0">{{ personal_data.address_street }}</p>
+                        <p class="mt-0 mb-0">{{ personal_data.address_zip }} {{ personal_data.address_city}}</p>
+                        <p class="mt-0 mb-0">{{ elements['telephone']}}: {{ personal_data.telephone }}</p>
+                        <p class="mt-0 mb-0">{{ elements['email']}}: {{ personal_data.email }}</p>
+                        <p class="mt-0 mb-0">{{ elements['nationality'] }}: {{ personal_data.nationality }}</p>
+                    </div>
+                    <div v-else>
+                        <p>{{ elements['personal_data_access_denied'] }}</p>
+                    </div>
+                </div>
             </div>
         </div>
 
