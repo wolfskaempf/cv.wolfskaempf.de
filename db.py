@@ -176,7 +176,7 @@ element_db["nationality"] = Element(name="nationality", content={
 element_db["personal_data_access_denied"] = Element(name="personal_data_access_denied", content={
     "en": """Personal data is only shown if you access this site with the name of your company inside the hash of the 
     URL""",
-    "de": """Die Persönlichen Daten werden nur angezeigt, wenn du den Link mit dem Namen Deiner Firma im Hash der 
+    "de": """Die persönlichen Daten werden nur angezeigt, wenn du den Link mit dem Namen Deiner Firma im Hash der 
     URL aufrufst."""
 })
 
