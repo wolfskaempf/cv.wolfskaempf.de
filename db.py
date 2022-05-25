@@ -115,8 +115,9 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     (C and Java 8) and mentored the one-week programming courses.
     <br><br>
     At TEAM23 I'd love to implement projects with a sense of purpose, and thus follow up on the projects that TEAM23 has 
-    has carried out so far. With Python as the tool of choice to create meaningful results, I'd be looking forward to
-    toast to our first successful ventures together at the next mountain hike.""",
+    has carried out so far, especially those in the health and public sector. With Python as the tool of choice to 
+    create meaningful results, I'd be looking forward to toast to our first successful ventures together at the 
+    next TEAM23 mountain hike.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
     Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
@@ -134,8 +135,9 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     und betreute die jeweils einwöchigen Programmierkurse.
     <br><br>
     Bei TEAM23 möchte ich Projekte mit Sinn umsetzen und damit an die Projekte anschließen, die TEAM23 bisher 
-    durchgeführt hat. Ich würde mich sehr freuen, mit Python als Werkzeug der Wahl wirkungsvolle Ergebnisse zu 
-    erschaffen und als Teil des TEAM23 bei der nächsten Bergtour auf die ersten gemeinsamen Erfolge anzustoßen."""
+    durchgeführt hat, insbesondere im Gesundheits- und öffentlichen Sektor. 
+    Ich würde mich sehr freuen, mit Python als Werkzeug der Wahl wirkungsvolle Ergebnisse zu erschaffen und bei der
+     nächsten TEAM23-Bergtour auf die ersten gemeinsamen Erfolge anzustoßen."""
 })
 element_db["experience_header"] = Element(name="experience_header", content={
     "en": "Experience",
@@ -583,15 +585,16 @@ trivia_db_en.append(Trivia(
     language=Language.en,
     content="""Using this 3D-printed 
     <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">replacement part</a>, 
-    that I designed for the 3 tesla MRI Siemens Vida, we have already saved a few thousand euros of repair costs,
-    as the original part can only be purchased together with a technicians appointment."""
+    that I designed for Siemens' 3 tesla MRI Vida, my current employer has already saved a few thousand euros of 
+    repair costs, as the original part can only be purchased together with a technicians appointment."""
 ))
 
 trivia_db_de: list[Trivia] = []
 trivia_db_de.append(Trivia(
     language=Language.de,
-    content="""Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt. Du kannst den
-    <a href="https://github.com/wolfskaempf/cv.wolfskaempf.de" target="_blank">Quellcode</a> auf GitHub finden."""
+    content="""Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt. Der
+    <a href="https://github.com/wolfskaempf/cv.wolfskaempf.de" target="_blank">Quellcode</a> ist auf GitHub zu 
+    finden."""
 ))
 trivia_db_de.append(Trivia(
     language=Language.de,
@@ -599,8 +602,8 @@ trivia_db_de.append(Trivia(
     legendären <a href="https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier#l=eng&t=45"
     target="_blank">BahnMining-Vortrag</a> von David Kriesel oder einen hoch-technischen 
     <a href="https://media.ccc.de/v/36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti#l=eng"
-    target="_blank">Talk über das deutsche Gesundheitswesen</a>, in dem ich wirklich an meine 
-    dolmetscherischen Grenzen gebracht wurde."""
+    target="_blank">Talk über das deutsche Gesundheitswesen</a>, der mich wirklich an meine dolmetscherischen Grenzen
+    brachte."""
 ))
 trivia_db_de.append(Trivia(
     language=Language.de,
@@ -619,7 +622,7 @@ trivia_db_de.append(Trivia(
     language=Language.de,
     content="""Mit diesem 3D-gedruckten 
     <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">Ersatzteil</a>, 
-    das ich für das 3 Tesla MRT Siemens Vida entworfen habe, haben wir schon mehrere tausend Euro Reparaturkosten 
-    gespart, da die Originalteile immer wieder zerbrachen und nur zusammen mit einem Technikereinsatz gekauft werden 
-    konnten."""
+    das ich für das 3 Tesla MRT Vida von Siemens entworfen habe, hat mein aktueller Arbeitgeber schon mehrere tausend 
+    Euro Reparaturkosten gespart, da die Originalteile immer wieder zerbrachen und nur zusammen mit einem 
+    Technikereinsatz gekauft werden konnten."""
 ))

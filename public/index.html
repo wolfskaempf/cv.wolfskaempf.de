@@ -64,7 +64,7 @@
 
                 <h2>{{ elements.experience_header }}</h2>
                 <div v-for="exp in experiences" class="relative">
-                    <span :class="{ 'block': exp.highlight, 'absolute': exp.highlight, '-inset-1': exp.highlight, '-skew-y-3': exp.highlight, 'bg-amber-200': exp.highlight }"
+                    <span :class="{ 'block': exp.highlight, 'absolute': exp.highlight, '-inset-1': exp.highlight, '-skew-y-3': exp.highlight, 'bg-green-200': exp.highlight }"
                           aria-hidden="true"></span>
                     <div :class="{ 'relative': exp.highlight }">
                         <h3 class="mb-0">{{ exp.title }}</h3>
@@ -84,7 +84,7 @@
 
                 <h2>{{ elements.volunteering_header }}</h2>
                 <div v-for="vol in volunteering" class="relative">
-                    <span :class="{ 'block': vol.highlight, 'absolute': vol.highlight, '-inset-1': vol.highlight, '-skew-y-3': vol.highlight, 'bg-amber-200': vol.highlight }"
+                    <span :class="{ 'block': vol.highlight, 'absolute': vol.highlight, '-inset-1': vol.highlight, '-skew-y-3': vol.highlight, 'bg-green-200': vol.highlight }"
                           aria-hidden="true"></span>
                     <div :class="{ 'relative': vol.highlight }">
                         <h3 class="mb-0">{{ vol.title }}</h3>
@@ -110,8 +110,10 @@
                             }}</p>
                         <p class="mt-0 mb-0">{{ personal_data.address_street }}</p>
                         <p class="mt-0 mb-0">{{ personal_data.address_zip }} {{ personal_data.address_city }}</p>
-                        <p class="mt-0 mb-0">{{ elements.telephone }}: {{ personal_data.telephone }}</p>
-                        <p class="mt-0 mb-0">{{ elements.email }}: {{ personal_data.email }}</p>
+                        <p class="mt-0 mb-0">{{ elements.telephone }}:
+                            <a :href="'tel:' + personal_data.telephone">{{ personal_data.telephone }}</a></p>
+                        <p class="mt-0 mb-0">{{ elements.email }}:
+                            <a :href="'mailto:' + personal_data.email">{{ personal_data.email }}</a></p>
                         <p class="mt-0 mb-0">{{ elements.nationality }}: {{ personal_data.nationality }}</p>
                     </div>
                     <div v-else>
