@@ -1,6 +1,8 @@
 # cv.wolfskaempf.de
 My CV built with FastAPI, Vue and Tailwind CSS
 
+![screenshot of the main page of cv.wolfskaempf.de](https://user-images.githubusercontent.com/233473/170156130-da666711-7fc7-405e-85fc-f15fb2272eb0.png)
+
 ## Deploy using CapRover
 [CapRover](https://caprover.com/) is a tool that turns your personal VPS into a Platform as a Service comparable to [dokku](https://dokku.com/) or Heroku.
 
