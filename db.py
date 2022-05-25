@@ -552,7 +552,8 @@ volunteering_db_de.append(Volunteering(
 trivia_db_en: list[Trivia] = []
 trivia_db_en.append(Trivia(
     language=Language.en,
-    content="This CV is built with FastAPI, Vue and Tailwind CSS.",
+    content="""This CV is built with FastAPI, Vue and Tailwind CSS. You can find its  
+    <a href="https://github.com/wolfskaempf/cv.wolfskaempf.de" target="_blank">source-code</a> on GitHub.""",
     highlight=True
 ))
 trivia_db_en.append(Trivia(
@@ -589,7 +590,8 @@ trivia_db_en.append(Trivia(
 trivia_db_de: list[Trivia] = []
 trivia_db_de.append(Trivia(
     language=Language.de,
-    content="Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt."
+    content="""Dieses CV wurde mit FastAPI, Vue und Tailwind CSS erstellt. Du kannst den
+    <a href="https://github.com/wolfskaempf/cv.wolfskaempf.de" target="_blank">Quellcode</a> auf GitHub finden."""
 ))
 trivia_db_de.append(Trivia(
     language=Language.de,
