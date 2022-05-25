@@ -63,11 +63,15 @@
                 <p v-html="elements.glance_copy"></p>
 
                 <h2>{{ elements.experience_header }}</h2>
-                <div v-for="exp in experiences">
-                    <h3 class="mb-0">{{ exp.title }}</h3>
-                    <p class="mb-0">{{ exp.company }}</p>
-                    <p class="mt-0">{{ exp.start_date }} — {{ exp.end_date }}</p>
-                    <p v-html="exp.description"></p>
+                <div v-for="exp in experiences" class="relative">
+                    <span :class="{ 'block': exp.highlight, 'absolute': exp.highlight, '-inset-1': exp.highlight, '-skew-y-3': exp.highlight, 'bg-amber-200': exp.highlight }"
+                          aria-hidden="true"></span>
+                    <div :class="{ 'relative': exp.highlight }">
+                        <h3 class="mb-0">{{ exp.title }}</h3>
+                        <p class="mb-0">{{ exp.company }}</p>
+                        <p class="mt-0">{{ exp.start_date }} — {{ exp.end_date }}</p>
+                        <p v-html="exp.description"></p>
+                    </div>
                 </div>
 
                 <h2>{{ elements.education_header }}</h2>
@@ -79,12 +83,16 @@
                 </div>
 
                 <h2>{{ elements.volunteering_header }}</h2>
-                <div v-for="vol in volunteering">
-                    <h3 class="mb-0">{{ vol.title }}</h3>
-                    <p class="mb-0">{{ vol.organisation }}</p>
-                    <p class="mt-0">{{ vol.start_date }} — {{ vol.end_date }}</p>
+                <div v-for="vol in volunteering" class="relative">
+                    <span :class="{ 'block': vol.highlight, 'absolute': vol.highlight, '-inset-1': vol.highlight, '-skew-y-3': vol.highlight, 'bg-amber-200': vol.highlight }"
+                          aria-hidden="true"></span>
+                    <div :class="{ 'relative': vol.highlight }">
+                        <h3 class="mb-0">{{ vol.title }}</h3>
+                        <p class="mb-0">{{ vol.organisation }}</p>
+                        <p class="mt-0">{{ vol.start_date }} — {{ vol.end_date }}</p>
 
-                    <p v-html="vol.description"></p>
+                        <p v-html="vol.description"></p>
+                    </div>
                 </div>
 
                 <div>

@@ -24,6 +24,7 @@ class Experience(BaseModel):
     start_date: str
     end_date: str
     description: str
+    highlight: bool = False
 
 
 class Education(BaseModel):
@@ -44,12 +45,14 @@ class Volunteering(BaseModel):
     start_date: str
     end_date: str
     description: str
+    highlight: bool = False
 
 
 class Trivia(BaseModel):
     """Objects of this type contain all attributes of one piece of trivia"""
     language: Language
     content: str
+    highlight: bool = False
 
 
 class PersonalData(BaseModel):
@@ -215,7 +218,8 @@ experience_db_de.append(Experience(
     Verteilen der Übungsteilnehmer:innen vom Lehrstuhl für Theoretische Informatik offline genommen wurde, programmierte 
     ich <a href="https://www.youtube.com/watch?v=JM6i0Hb757A" target="_blank">Loki</a> (JavaFX 8), welches sowohl an der
      Universität Augsburg für die Verteilung der Student:innen auf die Informatiktutorien, als auch beim Europäischen 
-     Jugendparlament für die Verteilung von Teilnehmer:innen an ihre präferierten Themenbereiche verwendet wurde."""
+     Jugendparlament für die Verteilung von Teilnehmer:innen an ihre präferierten Themenbereiche verwendet wurde.""",
+    highlight=True
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -249,7 +253,8 @@ experience_db_de.append(Experience(
     Zuletzt beriet ich hauptsächlich die Projektmanager:innen des Internationalen Büros des EJP darin, 
     ihre Wünsche in eine verbindliche Sprache zu übersetzen, die auch von extern beschäftigten 
     Webentwickler:innen verstanden wird.
-    """
+    """,
+    highlight=True
 ))
 experience_db_de.append(Experience(
     language=Language.de,
@@ -310,7 +315,8 @@ experience_db_en.append(Experience(
     <a href="https://www.youtube.com/watch?v=JM6i0Hb757A" target="_blank">Loki</a> (JavaFX 8), which was used by 
     the University of Augsburg for the allocation of students to their computer science courses and by the 
     European Youth Parliament for the allocation of the hundreds of participants to their preferred topics.
-    """
+    """,
+    highlight=True
 ))
 experience_db_en.append(Experience(
     language=Language.en,
@@ -338,7 +344,8 @@ experience_db_en.append(Experience(
     European Youth Parliament. In the last two years at the EYP I mainly advised our project managers on 
     other web development projects, helping them translate their wishes into a language the web developers 
     will understand.
-    """
+    """,
+    highlight=True
 ))
 experience_db_en.append(Experience(
     language=Language.en,
@@ -442,7 +449,8 @@ volunteering_db_en.append(Volunteering(
     <br><br>
     With Docker and Ansible I also run various other web applications that allow privacy friendly online-collaboration
     since the start of the pandemic.
-    """
+    """,
+    highlight=True
 ))
 volunteering_db_en.append(Volunteering(
     language=Language.en,
@@ -502,7 +510,8 @@ volunteering_db_de.append(Volunteering(
     <br><br>
     Mit Docker und Ansible betreibe ich für die Klimagerechtigkeitsbewegung noch diverse andere interne Webanwendungen, 
     die datenschutzfreundlich die digitale Zusammenarbeit seit Beginn der Covid-19-Pandemie ermöglichen.
-    """
+    """,
+    highlight=True
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
@@ -543,7 +552,8 @@ volunteering_db_de.append(Volunteering(
 trivia_db_en: list[Trivia] = []
 trivia_db_en.append(Trivia(
     language=Language.en,
-    content="This CV is built with FastAPI, Vue and Tailwind CSS."
+    content="This CV is built with FastAPI, Vue and Tailwind CSS.",
+    highlight=True
 ))
 trivia_db_en.append(Trivia(
     language=Language.en,

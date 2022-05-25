@@ -952,6 +952,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+#app .-inset-1 {
+  top: -0.25rem;
+  right: -0.25rem;
+  bottom: -0.25rem;
+  left: -0.25rem;
+}
+
+#app .-inset-3 {
+  top: -0.75rem;
+  right: -0.75rem;
+  bottom: -0.75rem;
+  left: -0.75rem;
+}
+
+#app .-inset-1 {
+  top: -0.25rem;
+  right: -0.25rem;
+  bottom: -0.25rem;
+  left: -0.25rem;
+}
+
 #app .right-1 {
   right: 0.25rem;
 }
@@ -970,6 +991,70 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 #app .right-1 {
   right: 0.25rem;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
+}
+
+#app .mb-0 {
+  margin-bottom: 0px;
+}
+
+#app .mt-0 {
+  margin-top: 0px;
 }
 
 #app .mb-0 {
@@ -1134,6 +1219,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 #app .w-full {
   width: 100%;
+}
+
+#app .w-5\/6 {
+  width: 83.333333%;
+}
+
+#app .-skew-y-3 {
+  --tw-skew-y: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+#app .-skew-y-2 {
+  --tw-skew-y: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+#app .-skew-y-1 {
+  --tw-skew-y: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 #app .transform {
@@ -1317,6 +1421,142 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 3rem;
 }
 
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+#app .gap-y-12 {
+  row-gap: 3rem;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
+#app .rounded {
+  border-radius: 0.25rem;
+}
+
+#app .rounded-full {
+  border-radius: 9999px;
+}
+
 #app .rounded {
   border-radius: 0.25rem;
 }
@@ -1473,6 +1713,112 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 83 9 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 83 9 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+#app .bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
 #app .p-8 {
   padding: 2rem;
 }
@@ -1583,6 +1929,70 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 #app .p-1 {
   padding: 0.25rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-2 {
+  padding: 0.5rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-2 {
+  padding: 0.5rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-2 {
+  padding: 0.5rem;
+}
+
+#app .p-8 {
+  padding: 2rem;
+}
+
+#app .p-1 {
+  padding: 0.25rem;
+}
+
+#app .p-2 {
+  padding: 0.5rem;
 }
 
 #app .p-8 {
@@ -1624,6 +2034,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 #app .capitalize {
   text-transform: capitalize;
+}
+
+#app .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 #app .underline {
@@ -1965,6 +2380,86 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  #app .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #app .xl\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
   #app .xl\:px-60 {
     padding-left: 15rem;
     padding-right: 15rem;
