@@ -92,8 +92,8 @@ element_db["switch_language"] = Element(name="switch_language", content={
     "de": "Switch to English"
 })
 element_db["application_as"] = Element(name="application_as", content={
-    "en": "Application as Backend-Python-Developer",
-    "de": "Bewerbung als Backend-Python-Entwickler"
+    "en": "Backend-Python-Developer",
+    "de": "Backend-Python-Entwickler"
 })
 element_db["glance_header"] = Element(name="glance_header", content={
     "en": "At a glance",
@@ -112,15 +112,10 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     an essential tool for the continued operation of the events of the European Youth Parliament.
     <br><br>
     During my computer science studies at the University of Augsburg I've been tutor for Computer Science 
-    (C and Java 8) and mentored the one-week programming courses.
-    <br><br>
-    At TEAM23 I'd love to implement projects with a sense of purpose, and thus follow up on the projects that TEAM23 has 
-    has carried out so far, especially those in the health and public sector. With Python as the tool of choice to 
-    create meaningful results, I'd be looking forward to toast to our first successful ventures together at the 
-    next TEAM23 mountain hike.""",
+    (C and Java 8) and mentored the one-week programming courses.""",
 
     "de": """Hi! 👋 Mein Name ist Tom und ich bin 25 Jahre alt. Ich begeistere mich für gerechte Bildungschancen, öffentliche Gesundheit, 
-    Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen besser machen kann.
+    Klimagerechtigkeit und wie man die Welt mit Python ein kleines Stückchen bessermachen kann.
     <br><br>
     Seit 2015 entwickle ich ehrenamtlich Webanwendungen mit Python, unter anderem für das 
     <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschem Vorstand ich von 2016 bis 2018 
@@ -132,12 +127,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     Jugendparlaments.
     <br><br>
     Während meines Informatikstudiums an der Universität Augsburg war ich Tutor für Informatik (C und Java 8)
-    und betreute die jeweils einwöchigen Programmierkurse.
-    <br><br>
-    Bei TEAM23 möchte ich Projekte mit Sinn umsetzen und damit an die Projekte anschließen, die TEAM23 bisher 
-    durchgeführt hat, insbesondere im Gesundheits- und öffentlichen Sektor. 
-    Ich würde mich sehr freuen, mit Python als Werkzeug der Wahl wirkungsvolle Ergebnisse zu erschaffen und bei der
-     nächsten TEAM23-Bergtour auf die ersten gemeinsamen Erfolge anzustoßen."""
+    und betreute die jeweils einwöchigen Programmierkurse."""
 })
 element_db["experience_header"] = Element(name="experience_header", content={
     "en": "Experience",
@@ -504,7 +494,7 @@ volunteering_db_de.append(Volunteering(
     Ich entwickle und betreibe für FFF Webanwendungen mit Python, Django bzw. Flask, und Docker, mit denen interne und 
     externe Organisationsabläufe automatisiert werden. So können sich Menschen in einem 
     <a href="https://github.com/wolfskaempf/helfffen" target="_blank">Helfer:innenportal</a> bequem ansehen, welche 
-    Aufgaben sie übernehmen könnten und haben die Möglichkeit sich direkt auf 
+    Aufgaben sie übernehmen könnten und haben die Möglichkeit, sich direkt auf 
     der Seite bei uns zu melden. Intern organisiert eine andere Anwendung 
     <a href="https://github.com/wolfskaempf/tops" target="_blank">Tagesordnungspunkte</a> so, dass keine Fristen 
     verpasst werden und dank <a href="https://github.com/wolfskaempf/elektronenhirn" target="_blank">Chatbot</a> nichts 
@@ -517,7 +507,7 @@ volunteering_db_de.append(Volunteering(
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
-    organisation="Europäisches Jugendparlament in Deutschland e.V.",
+    organisation="Europäisches Jugendparlament in Deutschland e. V.",
     title="Vorstandsmitglied",
     start_date="Juni 2016",
     end_date="Juni 2018",
@@ -532,12 +522,12 @@ volunteering_db_de.append(Volunteering(
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
-    organisation="Tennisabteilung der SG Diepholz von 1980 e.V.",
+    organisation="Tennisabteilung der SG Diepholz von 1980 e. V.",
     title="Vorstandsmitglied",
     start_date="Juli 2013",
     end_date="Januar 2019",
-    description="""Als das damals jüngstes Vorstandsmitglied gehörte es zu meinem Aufgabenbereich unseren Verein 
-    attraktiver für junge Mitglieder zu machen. Ich erstellte und pflegte unsere Online-Präsenz."""
+    description="""Als das damals jüngste Vorstandsmitglied gehörte es zu meinem Aufgabenbereich, unseren Verein 
+    attraktiver für junge Mitglieder zu machen. Zudem erstellte und pflegte ich unsere Online-Präsenz."""
 ))
 volunteering_db_de.append(Volunteering(
     language=Language.de,
@@ -614,8 +604,8 @@ trivia_db_de.append(Trivia(
     language=Language.de,
     content="""Ich habe eine Leidenschaft für IT-Sicherheit. 
     Auf <a href="https://app.hackthebox.com/users/531118" target="_blank">HackTheBox</a>, einer 
-    IT-Sicherheits-Wettbewerbs-Plattform bin ich im globalen Ranking auf Platz 482 und auf 
-    <a href="https://tryhackme.com/p/wolfskto" target="_blank">TryHackMe</a>, einer IT-Sicherheits-Lernplattform bin 
+    IT-Sicherheits-Wettbewerbs-Plattform, bin ich im globalen Ranking auf Platz 482 und auf 
+    <a href="https://tryhackme.com/p/wolfskto" target="_blank">TryHackMe</a>, einer IT-Sicherheits-Lernplattform, bin 
     ich in den globalen Top 3&nbsp%."""
 ))
 trivia_db_de.append(Trivia(
