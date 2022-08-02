@@ -253,7 +253,7 @@ experience_db_de.append(Experience(
     company="Radiologie Augsburg Friedberg ÜBAG",
     title="Werkstudent in der Radiologie",
     start_date="August 2019",
-    end_date="heute",
+    end_date="August 2022",
     description="""Ich nehme mir viel Zeit für unsere Patient:innen, erstelle eine detaillierte Anamnese 
     mit ihnen und optimiere die Sequenzen und Parameter der MRT-Untersuchung auf die Bedürfnisse der Patient:innen
     und der Untersuchung. Mit viel Freude erarbeite ich gemeinsam mit unseren Doktor:innen und Medizinprofessoren
@@ -344,7 +344,7 @@ experience_db_en.append(Experience(
     company="Radiologie Augsburg Friedberg ÜBAG",
     title="MRI Operator",
     start_date="August 2019",
-    end_date="today",
+    end_date="August 2022",
     description="""I go above and beyond for my patients by taking the time to build a detailed overview 
     of their case history and new symptoms and then optimising the MRI examination to best suit their needs. 
     Working with our doctors and medical professors, it is a pleasure to be serving our community by 
