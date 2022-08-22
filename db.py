@@ -575,7 +575,7 @@ trivia_db_en.append(Trivia(
     language=Language.en,
     content="""Using this 3D-printed 
     <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">replacement part</a>, 
-    that I designed for Siemens' 3 tesla MRI Vida, my current employer has already saved a few thousand euros of 
+    that I designed for Siemens' 3 tesla MRI Vida, my previous employer has already saved a few thousand euros of 
     repair costs, as the original part can only be purchased together with a technicians appointment."""
 ))
 
@@ -612,7 +612,7 @@ trivia_db_de.append(Trivia(
     language=Language.de,
     content="""Mit diesem 3D-gedruckten 
     <a href="https://www.printables.com/de/model/62946-siemens-vida-mri-paper-holder" target="_blank">Ersatzteil</a>, 
-    das ich für das 3 Tesla MRT Vida von Siemens entworfen habe, hat mein aktueller Arbeitgeber schon mehrere tausend 
+    das ich für das 3 Tesla MRT Vida von Siemens entworfen habe, hat mein vorheriger Arbeitgeber schon mehrere tausend 
     Euro Reparaturkosten gespart, da die Originalteile immer wieder zerbrachen und nur zusammen mit einem 
     Technikereinsatz gekauft werden konnten."""
 ))
