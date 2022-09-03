@@ -107,7 +107,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     <a href = "https://eyp.org/" target = "_blank">European Youth Parliament</a>, where I've also been a member of the board
     of the German national committee between 2016 and 2018.
     <br><br>
-    To date, my largest project <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> has been used to 
+    To date, my largest personal project <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> has been used to 
     visualise debates and voting procedures at over 250 events in 40 different countries. During the pandemic it was
     an essential tool for the continued operation of the events of the European Youth Parliament.
     <br><br>
@@ -121,7 +121,7 @@ element_db["glance_copy"] = Element(name="glance_copy", content={
     <a href = "https://eyp.de/" target = "_blank">Europäische Jugendparlament</a>, dessen deutschem Vorstand ich von 2016 bis 2018 
     angehörte.
     <br><br>
-    Mein größtes Projekt <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> wurde seit 2015 auf über 
+    Mein größtes persönliches Projekt <a href = "https://stats.eyp.org/" target = "_blank">General Assembly Statistics</a> wurde seit 2015 auf über 
     250 Veranstaltungen in 40 verschiedenen Ländern dafür eingesetzt, Debatten und Abstimmungen zu visualisieren und 
     ermöglichte während der Covid-19-Pandemie das digitale Weiterführen der Vollversammlungen des Europäischen 
     Jugendparlaments.
@@ -264,6 +264,16 @@ experience_db_de.append(Experience(
     Vida gehört auch die Abrechnung und das Verabreichen des Kontrastmittels zu meinen Aufgaben.
     """
 ))
+experience_db_de.append(Experience(
+    language=Language.de,
+    company="TEAM23 GmbH",
+    title="Backend Python Entwickler",
+    start_date="August 2022",
+    end_date="heute",
+    description="""
+    """
+))
+
 
 experience_db_en: list[Experience] = []
 experience_db_en.append(Experience(
@@ -354,6 +364,15 @@ experience_db_en.append(Experience(
     My main area of work is conducting neurological MRI scans of brains 
     and spines on Siemens MRIs, as well as medical accounting and administering contrast agent during the 
     examinations.
+    """
+))
+experience_db_en.append(Experience(
+    language=Language.en,
+    company="TEAM23 GmbH",
+    title="Backend Python Developer",
+    start_date="August 2022",
+    end_date="today",
+    description="""
     """
 ))
 
